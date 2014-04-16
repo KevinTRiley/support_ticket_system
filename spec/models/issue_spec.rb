@@ -5,5 +5,7 @@ describe Issue do
     issue = FactoryGirl.build(:issue)
 
     expect(issue.description).to eq("issue description")
+    expect(issue.state).to eq("new")
+    expect(issue.urgency).to eq(0)
   end
 end

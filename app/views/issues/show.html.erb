@@ -4,6 +4,14 @@
   <strong>Description:</strong>
   <%= @issue.description %>
 </p>
+<p>
+  <strong>State:</strong>
+  <%= @issue.state %>
+</p>
+<p>
+  <strong>Urgency:</strong>
+  <%= @issue.urgency %>
+</p>
 
 <%= link_to 'Edit', edit_issue_path(@issue) %> |
 <%= link_to 'Back', issues_path %>

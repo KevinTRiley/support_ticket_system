@@ -4,6 +4,8 @@
   <thead>
     <tr>
       <th>Description</th>
+      <th>State</th>
+      <th>Urgency</th>
       <th></th>
       <th></th>
       <th></th>
@@ -14,6 +16,8 @@
     <% @issues.each do |issue| %>
       <tr>
         <td><%= issue.description %></td>
+        <td><%= issue.state %></td>
+        <td><%= issue.urgency %></td>
         <td><%= link_to 'Show', issue %></td>
         <td><%= link_to 'Edit', edit_issue_path(issue) %></td>
         <td><%= link_to 'Destroy', issue, method: :delete, data: { confirm: 'Are you sure?' } %></td>

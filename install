@@ -1,0 +1,1370 @@
+Script started on Wed 16 Apr 2014 11:58:54 AM EDT
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# sudo bashyum install git-core[13Psudo -s[KPASSWORDyum install git-coresu[Kyum install git-core[13Pcd root../..yum install git-core[12Pcd ../..[1Prootyum install git-coresu[Kyum install git-core[12PPASSWORDsu[Kdo -syum install git-core[11Psudo bash[Ksudo bashyum install git-core[13Psudo -s[KPASSWORDyum install git-coresu[Kyum install git-core[13Pcd root../..yum install git-corecd ..[K[3P..rootyum install git-coresudo apt-get install yum[4Pyum install git-corecd ..[Krails g scaffold Product ttitle:string description:text image_url:string price:decimal[Asudo apt-get install nodejs[K[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# node[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo apt-get install nodejjs[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# node[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjsrails g scaffold Product ttitle:string description:text image_url:string price:decimal[Abundle[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csubl .execjsrequire "execjs"ails generate scaffold Prroduct title:string description:text image_url:string price:decimal[A[7Pgem install execjs
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crails generate scaffold Prroduct title:string description:text image_url:string price:decimal[A-v[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgenerate scaffold Prroduct title:string description:text image_url:string price:decimal[Als -p[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd depot/rails new depot-v[Kvm --default 2.0.0gem install rails --versioon 4.0.0 --no-ri --no-rdoc[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [6Prvm --default 2.0.0
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pails -vnew depot[6Pcd depot/[4Pls -prails generate scaffold Prroduct title:string description:text image_url:string price:decimal[A-v[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgenerate scaffold Prroduct title:string description:text image_url:string price:decimal[A[7Pgem install execjs
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crails generate scaffold Prroduct title:string description:text image_url:string price:decimal[A[9Pequire "execjs"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pexecjssubl .bundlerails g scaffold Product ttitle:string description:text image_url:string price:decimal[Anodejs[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo apt-get install nodejjs[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rails g scaffold Product title:string description:text image_url:string price:decimal[Acd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cyum install git-coresudo apt-get install yum[4Pyum install git-coreroot[K[2P..cd ..yum install git-core[12Pcd ../..[1Prootyum install git-coresu[Kyum install git-core[12PPASSWORDsu[Kdo -syum install git-core[11Psudo bash[Ksudo bashyum install git-core[13Psudo -s[KPASSWORDyum install git-coresu[Kyum install git-core[13Pcd root../..yum install git-corecd ..[K[3P..rootyum install git-coresudo apt-get install yum[4Pyum install git-corecd ..[Krails g scaffold Product ttitle:string description:text image_url:string price:decimal[Asudo apt-get install nodejs[K[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# node[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjsrails g scaffold Product ttitle:string description:text image_url:string price:decimal[Abundle[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crails g scaffold Product ttitle:string description:text image_url:string price:decimal[Abundle[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csubl .execjsrequire "execjs"ails generate scaffold Prroduct title:string description:text image_url:string price:decimal[A[7Pgem install execjs
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crails generate scaffold Prroduct title:string description:text image_url:string price:decimal[B[A[7Pgem install execjs
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crails generate scaffold Prroduct title:string description:text image_url:string price:decimal[A[9Pequire "execjs"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pexecjssubl .bundlerails g scaffold Product ttitle:string description:text image_url:string price:decimal[Anodejs[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo apt-get install nodejjs[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rails g scaffold Product title:string description:text image_url:string price:decimal[Acd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cyum install git-coresudo apt-get install yum[4Pyum install git-coreroot[K[2P..cd ..yum install git-core[12Pcd ../..[1Prootyum install git-coresu[Kyum install git-core[12PPASSWORDsu[Kdo -syum install git-core[11Psudo bash[Krails plugin install git: //github.com/thoughtbot/paperclip.git
+[31mThe git source git://github.com/thoughtbot/paperclip.git is not yet checked out. Please run `bundle install` before trying to start your application[0m
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# bundle install
+Fetching git://github.com/thoughtbot/paperclip.git
+Fetching gem metadata from https://rubygems.org/........
+Fetching additional metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake 10.2.2
+Using i18n 0.6.9
+Using minitest 4.7.5
+Using multi_json 1.9.2
+Using thread_safe 0.3.3
+Using tzinfo 0.3.39
+Using activesupport 4.0.0
+Using builder 3.1.4
+Using erubis 2.7.0
+Using rack 1.5.2
+Using rack-test 0.6.2
+Using actionpack 4.0.0
+Using mime-types 1.25.1
+Using polyglot 0.3.4
+Using treetop 1.4.15
+Using mail 2.5.4
+Using actionmailer 4.0.0
+Using activemodel 4.0.0
+Using activerecord-deprecated_finders 1.0.3
+Using arel 4.0.2
+Using activerecord 4.0.0
+Using bundler 1.6.1
+[32mInstalling climate_control 0.0.3[0m
+[32mInstalling cocaine 0.5.4[0m
+Using coffee-script-source 1.7.0
+Using execjs 2.0.2
+Using coffee-script 2.2.0
+Using thor 0.19.1
+Using railties 4.0.0
+Using coffee-rails 4.0.1
+Using diff-lcs 1.2.5
+Using factory_girl 4.4.0
+Using factory_girl_rails 4.4.1
+Using tilt 1.4.1
+Using haml 4.0.5
+Using hike 1.2.3
+Using jbuilder 1.5.3
+Using jquery-rails 3.1.0
+Using json 1.8.1
+Using paperclip 4.1.1 from git://github.com/thoughtbot/paperclip.git (at master)
+Using sprockets 2.11.0
+Using sprockets-rails 2.0.1
+Using rails 4.0.0
+Using rdoc 4.1.1
+Using rspec-support 3.0.0.beta2
+Using rspec-expectations 3.0.0.beta2
+Using rspec-collection_matchers 0.0.3
+Using rspec-core 3.0.0.beta2
+Using rspec-mocks 3.0.0.beta2
+Using rspec-rails 3.0.0.beta2
+Using sass 3.2.19
+Using sass-rails 4.0.3
+Using sdoc 0.4.0
+Using sqlite3 1.3.9
+Using turbolinks 2.2.2
+Using uglifier 2.5.0
+[32mYour bundle is complete![0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# bundle installrails plugin install git:///github.com/thoughtbot/paperclip.git
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/dependencies.rb:228:in `require': cannot load such file -- rails/commands/plugin (LoadError)
+	from /var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/dependencies.rb:228:in `block in require'
+	from /var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/dependencies.rb:213:in `load_dependency'
+	from /var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/dependencies.rb:228:in `require'
+	from /var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/commands.rb:49:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# bundle show papers[Kclip
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rails generate Add[K[K[Kmigration  AddPhotoToIssues photo
+[31mThe git source git://github.com/thoughtbot/paperclip.git is not yet checked out. Please run `bundle install` before trying to start your application[0m
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# bundle install
+[32mUpdating git://github.com/thoughtbot/paperclip.git[0m
+fatal: ambiguous argument 'rails4': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[31mGit error: command `git rev-parse rails4` in directory
+/var/lib/gems/1.9.1/cache/bundler/git/paperclip-61f74de14812cabc026967a2b2c3ca8cbd2eed69
+has failed.
+If this error persists you could try removing the cache directory
+'/var/lib/gems/1.9.1/cache/bundler/git/paperclip-61f74de14812cabc026967a2b2c3ca8cbd2eed69'[0m
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# bundle install
+[32mUpdating git://github.com/thoughtbot/paperclip.git[0m
+fatal: ambiguous argument 'rails3': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[31mGit error: command `git rev-parse rails3` in directory
+/var/lib/gems/1.9.1/cache/bundler/git/paperclip-61f74de14812cabc026967a2b2c3ca8cbd2eed69
+has failed.
+If this error persists you could try removing the cache directory
+'/var/lib/gems/1.9.1/cache/bundler/git/paperclip-61f74de14812cabc026967a2b2c3ca8cbd2eed69'[0m
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# bundle install
+Using rake 10.2.2
+Using i18n 0.6.9
+Using minitest 4.7.5
+Using multi_json 1.9.2
+Using thread_safe 0.3.3
+Using tzinfo 0.3.39
+Using activesupport 4.0.0
+Using builder 3.1.4
+Using erubis 2.7.0
+Using rack 1.5.2
+Using rack-test 0.6.2
+Using actionpack 4.0.0
+Using mime-types 1.25.1
+Using polyglot 0.3.4
+Using treetop 1.4.15
+Using mail 2.5.4
+Using actionmailer 4.0.0
+Using activemodel 4.0.0
+Using activerecord-deprecated_finders 1.0.3
+Using arel 4.0.2
+Using activerecord 4.0.0
+Using climate_control 0.0.3
+Using cocaine 0.5.4
+Using coffee-script-source 1.7.0
+Using execjs 2.0.2
+Using coffee-script 2.2.0
+Using thor 0.19.1
+Using railties 4.0.0
+Using coffee-rails 4.0.1
+Using diff-lcs 1.2.5
+Using factory_girl 4.4.0
+Using factory_girl_rails 4.4.1
+Using tilt 1.4.1
+Using haml 4.0.5
+Using hike 1.2.3
+Using jbuilder 1.5.3
+Using jquery-rails 3.1.0
+Using json 1.8.1
+Using paperclip 4.1.1 from git://github.com/thoughtbot/paperclip.git (at master)
+Using bundler 1.6.1
+Using sprockets 2.11.0
+Using sprockets-rails 2.0.1
+Using rails 4.0.0
+Using rdoc 4.1.1
+Using rspec-support 3.0.0.beta2
+Using rspec-expectations 3.0.0.beta2
+Using rspec-collection_matchers 0.0.3
+Using rspec-core 3.0.0.beta2
+Using rspec-mocks 3.0.0.beta2
+Using rspec-rails 3.0.0.beta2
+Using sass 3.2.19
+Using sass-rails 4.0.3
+Using sdoc 0.4.0
+Using sqlite3 1.3.9
+Using turbolinks 2.2.2
+Using uglifier 2.5.0
+[32mYour bundle is complete![0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# bundle installrails generate migration AAddPhotoToIssues photo
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20140416161513_add_photo_to_issues.rb
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rake db:migrate
+==  AddPhotoToIssues: migrating ===============================================
+-- add_attachment(:issues, :photo)
+   -> 0.0016s
+==  AddPhotoToIssues: migrated (0.0018s) ======================================
+
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# r[Krake spec
+/usr/bin/ruby1.9.1 -S rspec ./spec/controllers/issues_controller_spec.rb ./spec/helpers/issues_helper_spec.rb ./spec/models/issue_spec.rb ./spec/requests/issues_spec.rb ./spec/routing/issues_routing_spec.rb ./spec/views/issues/edit.html.erb_spec.rb ./spec/views/issues/index.html.erb_spec.rb ./spec/views/issues/new.html.erb_spec.rb ./spec/views/issues/show.html.erb_spec.rb
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+Finished in 0.87524 seconds
+[32m29 examples, 0 failures[0m
+
+Randomized with seed 33690
+
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rails server
+=> Booting WEBrick
+=> Rails 4.0.0 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2014-04-16 12:23:19] INFO  WEBrick 1.3.1
+[2014-04-16 12:23:19] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2014-04-16 12:23:19] INFO  WEBrick::HTTPServer#start: pid=5658 port=3000
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-16 12:23:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 85ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+[2014-04-16 12:23:28] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/issues" for 127.0.0.1 at 2014-04-16 12:23:33 -0400
+Processing by IssuesController#index as HTML
+  [1m[35mIssue Load (0.4ms)[0m  SELECT "issues".* FROM "issues"
+  Rendered issues/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 87ms (Views: 79.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-16 12:23:33 -0400
+[2014-04-16 12:23:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-16 12:23:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-16 12:23:33 -0400
+[2014-04-16 12:23:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:23:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-16 12:23:33 -0400
+[2014-04-16 12:23:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-16 12:23:33 -0400
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2014-04-16 12:23:33 -0400
+[2014-04-16 12:23:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:23:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2014-04-16 12:23:33 -0400
+[2014-04-16 12:23:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-16 12:23:33 -0400
+[2014-04-16 12:23:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2014-04-16 12:23:36 -0400
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT "issues".* FROM "issues" WHERE "issues"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered issues/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2014-04-16 12:23:36 -0400
+
+ActionController::RoutingError (No route matches [GET] "/photos/medium/missing.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (55.0ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:23:39 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT "issues".* FROM "issues" WHERE "issues"."id" = ? LIMIT 1  [["id", "1"]]
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+  Rendered issues/_form.html.erb (79.9ms)
+  Rendered issues/edit.html.erb within layouts/application (81.8ms)
+Completed 200 OK in 88ms (Views: 85.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:26:37 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.1ms)[0m  [1mSELECT "issues".* FROM "issues" WHERE "issues"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered issues/_form.html.erb (4.5ms)
+  Rendered issues/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 66ms (Views: 8.4ms | ActiveRecord: 0.5ms)
+[2014-04-16 12:26:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-16 12:26:37 -0400
+[2014-04-16 12:26:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2014-04-16 12:26:37 -0400
+[2014-04-16 12:26:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-16 12:26:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-16 12:26:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-16 12:26:37 -0400
+[2014-04-16 12:26:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-16 12:26:37 -0400
+[2014-04-16 12:26:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:26:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-16 12:26:37 -0400
+[2014-04-16 12:26:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2014-04-16 12:26:37 -0400
+[2014-04-16 12:26:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:26:37] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+^[[A^C[2014-04-16 12:26:43] INFO  going to shutdown ...
+[2014-04-16 12:26:43] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rails server
+=> Booting WEBrick
+=> Rails 4.0.0 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2014-04-16 12:26:49] INFO  WEBrick 1.3.1
+[2014-04-16 12:26:49] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2014-04-16 12:26:49] INFO  WEBrick::HTTPServer#start: pid=5808 port=3000
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:26:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.4ms)[0m  SELECT "issues".* FROM "issues" WHERE "issues"."id" = ? LIMIT 1  [["id", "1"]]
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+  Rendered issues/_form.html.erb (50.8ms)
+  Rendered issues/edit.html.erb within layouts/application (56.7ms)
+Completed 200 OK in 255ms (Views: 126.7ms | ActiveRecord: 0.8ms)
+[2014-04-16 12:26:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-16 12:26:51 -0400
+[2014-04-16 12:26:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-16 12:26:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-16 12:26:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-16 12:26:51 -0400
+[2014-04-16 12:26:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:26:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:26:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-16 12:26:51 -0400
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2014-04-16 12:26:51 -0400
+[2014-04-16 12:26:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:26:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2014-04-16 12:26:51 -0400
+[2014-04-16 12:26:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-16 12:26:51 -0400
+[2014-04-16 12:26:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+^C[2014-04-16 12:28:50] INFO  going to shutdown ...
+[2014-04-16 12:28:50] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rails server
+=> Booting WEBrick
+=> Rails 4.0.0 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2014-04-16 12:29:00] INFO  WEBrick 1.3.1
+[2014-04-16 12:29:00] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2014-04-16 12:29:00] INFO  WEBrick::HTTPServer#start: pid=5854 port=3000
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:29:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT "issues".* FROM "issues" WHERE "issues"."id" = ? LIMIT 1  [["id", "1"]]
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+  Rendered issues/_form.html.erb (38.1ms)
+  Rendered issues/edit.html.erb within layouts/application (44.8ms)
+Completed 200 OK in 175ms (Views: 108.8ms | ActiveRecord: 0.4ms)
+[2014-04-16 12:29:03] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-16 12:29:03 -0400
+[2014-04-16 12:29:03] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-16 12:29:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-16 12:29:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-16 12:29:03 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-16 12:29:03 -0400
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2014-04-16 12:29:03 -0400
+[2014-04-16 12:29:03] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:29:03] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:29:03] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:29:03] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2014-04-16 12:29:03 -0400
+[2014-04-16 12:29:03] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:29:03] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-16 12:29:03 -0400
+[2014-04-16 12:29:03] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/issues" for 127.0.0.1 at 2014-04-16 12:29:10 -0400
+Processing by IssuesController#index as HTML
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT "issues".* FROM "issues"[0m
+  Rendered issues/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 21ms (Views: 13.4ms | ActiveRecord: 0.2ms)
+[2014-04-16 12:29:10] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:29:13 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (2.0ms)[0m  SELECT "issues".* FROM "issues" WHERE "issues"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered issues/_form.html.erb (11.7ms)
+  Rendered issues/edit.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 34ms (Views: 24.5ms | ActiveRecord: 2.0ms)
+[2014-04-16 12:29:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-16 12:29:35 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (0.7ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+[2014-04-16 12:29:35] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/issues" for 127.0.0.1 at 2014-04-16 12:29:40 -0400
+Processing by IssuesController#index as HTML
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT "issues".* FROM "issues"[0m
+  Rendered issues/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-16 12:29:40 -0400
+[2014-04-16 12:29:40] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2014-04-16 12:29:40 -0400
+[2014-04-16 12:29:40] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2014-04-16 12:29:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-16 12:29:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-16 12:29:40 -0400
+[2014-04-16 12:29:40] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-16 12:29:40 -0400
+[2014-04-16 12:29:40] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-16 12:29:40 -0400
+[2014-04-16 12:29:40] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:29:40] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+[2014-04-16 12:29:40] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-16 12:29:40 -0400
+[2014-04-16 12:29:40] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2014-04-16 12:29:43 -0400
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT "issues".* FROM "issues" WHERE "issues"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered issues/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2014-04-16 12:29:43 -0400
+
+ActionController::RoutingError (No route matches [GET] "/photos/medium/missing.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (43.8ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:29:46 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (9.5ms)[0m  [1mSELECT "issues".* FROM "issues" WHERE "issues"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered issues/_form.html.erb (35.9ms)
+  Rendered issues/edit.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 96ms (Views: 57.6ms | ActiveRecord: 9.5ms)
+^[[A^C[2014-04-16 12:35:25] INFO  going to shutdown ...
+[2014-04-16 12:35:25] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rails server
+=> Booting WEBrick
+=> Rails 4.0.0 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2014-04-16 12:35:29] INFO  WEBrick 1.3.1
+[2014-04-16 12:35:29] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2014-04-16 12:35:29] INFO  WEBrick::HTTPServer#start: pid=6007 port=3000
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:35:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 69ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:68:in `set_issue'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.7ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:36:37 -0400
+
+SyntaxError (/home/username/support_ticket_system/app/controllers/issues_controller.rb:76: syntax error, unexpected keyword_end, expecting $end):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__4473933810460216343__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:37:08 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:68:in `set_issue'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (76.0ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:37:17 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:68:in `set_issue'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.3ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:37:19 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:68:in `set_issue'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.3ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:37:23 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:68:in `set_issue'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.2ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:39:02 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:68:in `set_issue'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:39:04 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 9ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:68:in `set_issue'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:39:10 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:67:in `set_issue'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.4ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:39:11 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 12ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:67:in `set_issue'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:39:21 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:67:in `set_issue'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.5ms)
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:39:22 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 12ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:67:in `set_issue'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+^C[2014-04-16 12:40:24] INFO  going to shutdown ...
+[2014-04-16 12:40:24] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rake db:migrate
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rails server
+=> Booting WEBrick
+=> Rails 4.0.0 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2014-04-16 12:40:36] INFO  WEBrick 1.3.1
+[2014-04-16 12:40:36] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2014-04-16 12:40:36] INFO  WEBrick::HTTPServer#start: pid=6193 port=3000
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-16 12:40:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 79ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+[2014-04-16 12:40:43] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/issues" for 127.0.0.1 at 2014-04-16 12:40:46 -0400
+Processing by IssuesController#index as HTML
+Completed 500 Internal Server Error in 11ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.5ms)
+^C[2014-04-16 12:41:33] INFO  going to shutdown ...
+[2014-04-16 12:41:33] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# railse [K[K generate paperclip  issue photo
+[1m[32m      create[0m  db/migrate/20140416164151_add_attachment_photo_to_issues.rb
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rake db:migrate
+==  AddAttachmentPhotoToIssues: migrating =====================================
+-- change_table(:issues)
+rake aborted!
+StandardError: An error has occurred, this and all later migrations canceled:
+
+SQLite3::SQLException: duplicate column name: photo_file_name: ALTER TABLE "issues" ADD "photo_file_name" varchar(255)/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:91:in `initialize'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:91:in `new'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:91:in `prepare'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:134:in `execute'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:328:in `block in execute'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract_adapter.rb:425:in `block in log'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract_adapter.rb:420:in `log'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:328:in `execute'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/schema_statements.rb:360:in `add_column'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:451:in `add_column'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/schema_definitions.rb:360:in `column'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:52:in `block (2 levels) in attachment'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:51:in `each_pair'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:51:in `block in attachment'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:50:in `each'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:50:in `attachment'
+/home/username/support_ticket_system/db/migrate/20140416164151_add_attachment_photo_to_issues.rb:4:in `block in up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/schema_statements.rb:334:in `change_table'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:625:in `block in method_missing'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:597:in `block in say_with_time'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:597:in `say_with_time'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:617:in `method_missing'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:383:in `method_missing'
+/home/username/support_ticket_system/db/migrate/20140416164151_add_attachment_photo_to_issues.rb:3:in `up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:534:in `up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:574:in `exec_migration'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:555:in `block (2 levels) in migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:554:in `block in migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:294:in `with_connection'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:553:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:709:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:959:in `block in execute_migration_in_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:1005:in `block in ddl_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `block in transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/database_statements.rb:210:in `within_new_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/transactions.rb:209:in `transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:1005:in `ddl_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:958:in `execute_migration_in_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:920:in `block in migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:916:in `each'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:916:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:764:in `up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:742:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/databases.rake:42:in `block (2 levels) in <top (required)>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rake db:rollback
+==  AddPhotoToIssues: reverting ===============================================
+==  AddPhotoToIssues: reverted (0.0000s) ======================================
+
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rake db
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rake s[Kdb:show
+rake aborted!
+Don't know how to build task 'db:show'
+
+(See full trace by running task with --trace)
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rake db:show[K:rollback[1Pmigrateils generate paperclip iissue photo
+Another migration is already named add_attachment_photo_to_issues: /home/username/support_ticket_system/db/migrate/20140416164151_add_attachment_photo_to_issues.rb. Use --force to remove the old migration file and replace it.
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rails generate paperclip iissue photo[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [C[C[13Pke db:show
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K:rollback[1Pmigrate
+==  AddPhotoToIssues: migrating ===============================================
+==  AddPhotoToIssues: migrated (0.0000s) ======================================
+
+==  AddAttachmentPhotoToIssues: migrating =====================================
+-- change_table(:issues)
+rake aborted!
+StandardError: An error has occurred, this and all later migrations canceled:
+
+SQLite3::SQLException: duplicate column name: photo_file_name: ALTER TABLE "issues" ADD "photo_file_name" varchar(255)/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:91:in `initialize'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:91:in `new'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:91:in `prepare'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:134:in `execute'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:328:in `block in execute'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract_adapter.rb:425:in `block in log'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract_adapter.rb:420:in `log'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:328:in `execute'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/schema_statements.rb:360:in `add_column'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:451:in `add_column'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/schema_definitions.rb:360:in `column'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:52:in `block (2 levels) in attachment'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:51:in `each_pair'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:51:in `block in attachment'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:50:in `each'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:50:in `attachment'
+/home/username/support_ticket_system/db/migrate/20140416164151_add_attachment_photo_to_issues.rb:4:in `block in up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/schema_statements.rb:334:in `change_table'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:625:in `block in method_missing'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:597:in `block in say_with_time'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:597:in `say_with_time'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:617:in `method_missing'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:383:in `method_missing'
+/home/username/support_ticket_system/db/migrate/20140416164151_add_attachment_photo_to_issues.rb:3:in `up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:534:in `up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:574:in `exec_migration'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:555:in `block (2 levels) in migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:554:in `block in migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:294:in `with_connection'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:553:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:709:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:959:in `block in execute_migration_in_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:1005:in `block in ddl_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `block in transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/database_statements.rb:210:in `within_new_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/transactions.rb:209:in `transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:1005:in `ddl_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:958:in `execute_migration_in_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:920:in `block in migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:916:in `each'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:916:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:764:in `up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:742:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/databases.rake:42:in `block (2 levels) in <top (required)>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rake db:migrate
+==  AddAttachmentPhotoToIssues: migrating =====================================
+-- change_table(:issues)
+rake aborted!
+StandardError: An error has occurred, this and all later migrations canceled:
+
+SQLite3::SQLException: duplicate column name: photo_file_name: ALTER TABLE "issues" ADD "photo_file_name" varchar(255)/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:91:in `initialize'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:91:in `new'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:91:in `prepare'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:134:in `execute'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:328:in `block in execute'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract_adapter.rb:425:in `block in log'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract_adapter.rb:420:in `log'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:328:in `execute'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/schema_statements.rb:360:in `add_column'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:451:in `add_column'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/schema_definitions.rb:360:in `column'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:52:in `block (2 levels) in attachment'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:51:in `each_pair'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:51:in `block in attachment'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:50:in `each'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:50:in `attachment'
+/home/username/support_ticket_system/db/migrate/20140416164151_add_attachment_photo_to_issues.rb:4:in `block in up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/schema_statements.rb:334:in `change_table'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:625:in `block in method_missing'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:597:in `block in say_with_time'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:597:in `say_with_time'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:617:in `method_missing'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:383:in `method_missing'
+/home/username/support_ticket_system/db/migrate/20140416164151_add_attachment_photo_to_issues.rb:3:in `up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:534:in `up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:574:in `exec_migration'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:555:in `block (2 levels) in migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:554:in `block in migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:294:in `with_connection'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:553:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:709:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:959:in `block in execute_migration_in_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:1005:in `block in ddl_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `block in transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/database_statements.rb:210:in `within_new_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/transactions.rb:209:in `transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:1005:in `ddl_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:958:in `execute_migration_in_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:920:in `block in migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:916:in `each'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:916:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:764:in `up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:742:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/databases.rake:42:in `block (2 levels) in <top (required)>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rake db:migrate
+==  AddAttachmentPhotoToIssues: migrating =====================================
+-- remove_column(:issues, :photo)
+   -> 0.0420s
+-- change_table(:issues)
+rake aborted!
+StandardError: An error has occurred, this and all later migrations canceled:
+
+SQLite3::SQLException: duplicate column name: photo_file_name: ALTER TABLE "issues" ADD "photo_file_name" varchar(255)/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:91:in `initialize'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:91:in `new'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:91:in `prepare'
+/var/lib/gems/1.9.1/gems/sqlite3-1.3.9/lib/sqlite3/database.rb:134:in `execute'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:328:in `block in execute'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract_adapter.rb:425:in `block in log'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract_adapter.rb:420:in `log'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:328:in `execute'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/schema_statements.rb:360:in `add_column'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:451:in `add_column'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/schema_definitions.rb:360:in `column'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:52:in `block (2 levels) in attachment'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:51:in `each_pair'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:51:in `block in attachment'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:50:in `each'
+/var/lib/gems/1.9.1/bundler/gems/paperclip-41da3a3c4c13/lib/paperclip/schema.rb:50:in `attachment'
+/home/username/support_ticket_system/db/migrate/20140416164151_add_attachment_photo_to_issues.rb:5:in `block in up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/schema_statements.rb:334:in `change_table'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:625:in `block in method_missing'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:597:in `block in say_with_time'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:597:in `say_with_time'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:617:in `method_missing'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:383:in `method_missing'
+/home/username/support_ticket_system/db/migrate/20140416164151_add_attachment_photo_to_issues.rb:4:in `up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:534:in `up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:574:in `exec_migration'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:555:in `block (2 levels) in migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:554:in `block in migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:294:in `with_connection'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:553:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:709:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:959:in `block in execute_migration_in_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:1005:in `block in ddl_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `block in transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/database_statements.rb:210:in `within_new_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/transactions.rb:209:in `transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:1005:in `ddl_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:958:in `execute_migration_in_transaction'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:920:in `block in migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:916:in `each'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:916:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:764:in `up'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:742:in `migrate'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/databases.rake:42:in `block (2 levels) in <top (required)>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rake db:migrate
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rails server
+=> Booting WEBrick
+=> Rails 4.0.0 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2014-04-16 12:48:38] INFO  WEBrick 1.3.1
+[2014-04-16 12:48:38] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2014-04-16 12:48:38] INFO  WEBrick::HTTPServer#start: pid=6352 port=3000
+
+
+Started GET "/issues" for 127.0.0.1 at 2014-04-16 12:48:39 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IssuesController#index as HTML
+Completed 500 Internal Server Error in 64ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.6ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2014-04-16 12:49:18 -0400
+Processing by IssuesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2014-04-16 12:49:19 -0400
+Processing by IssuesController#index as HTML
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/home/username/support_ticket_system/app/models/issue.rb:4: syntax error, unexpected ':', expecting keyword_end
+...  validates_attachment :photo :content_type => { :content_ty...
+...                               ^):
+  app/controllers/issues_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.2ms)
+^C[2014-04-16 12:49:46] INFO  going to shutdown ...
+r[2014-04-16 12:49:46] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rails server
+=> Booting WEBrick
+=> Rails 4.0.0 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2014-04-16 12:49:50] INFO  WEBrick 1.3.1
+[2014-04-16 12:49:50] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2014-04-16 12:49:50] INFO  WEBrick::HTTPServer#start: pid=6403 port=3000
+
+
+Started GET "/issues" for 127.0.0.1 at 2014-04-16 12:49:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IssuesController#index as HTML
+  [1m[35mIssue Load (0.2ms)[0m  SELECT "issues".* FROM "issues"
+  Rendered issues/index.html.erb within layouts/application (43.7ms)
+Completed 200 OK in 124ms (Views: 71.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-16 12:49:51 -0400
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2014-04-16 12:49:51 -0400
+[2014-04-16 12:49:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:49:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-16 12:49:51 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-16 12:49:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-16 12:49:51 -0400
+[2014-04-16 12:49:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:49:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-16 12:49:51 -0400
+[2014-04-16 12:49:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:49:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2014-04-16 12:49:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-16 12:49:51 -0400
+[2014-04-16 12:49:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:49:51] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+^C[2014-04-16 12:50:02] INFO  going to shutdown ...
+[2014-04-16 12:50:02] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rails server
+=> Booting WEBrick
+=> Rails 4.0.0 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2014-04-16 12:50:10] INFO  WEBrick 1.3.1
+[2014-04-16 12:50:10] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2014-04-16 12:50:10] INFO  WEBrick::HTTPServer#start: pid=6432 port=3000
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2014-04-16 12:50:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT "issues".* FROM "issues" WHERE "issues"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered issues/show.html.erb within layouts/application (40.6ms)
+Completed 500 Internal Server Error in 147ms
+
+ActionView::Template::Error (undefined method `photo' for #<Issue:0x00000003254358>):
+    13:   <%= @issue.urgency %>
+    14: </p>
+    15: <div class="image">
+    16:   <%= image_tag @issue.photo.url(:medium) %>
+    17: </div>
+    18: 
+    19: <%= link_to 'Edit', edit_issue_path(@issue) %> |
+  app/views/issues/show.html.erb:16:in `_app_views_issues_show_html_erb___3545213151796564394_19689140'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.6ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2014-04-16 12:50:35 -0400
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.1ms)[0m  [1mSELECT "issues".* FROM "issues" WHERE "issues"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered issues/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-16 12:50:35 -0400
+[2014-04-16 12:50:35] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-16 12:50:35 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-16 12:50:35 -0400
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2014-04-16 12:50:35 -0400
+[2014-04-16 12:50:35] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:50:35] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:50:35] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-16 12:50:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-16 12:50:35 -0400
+[2014-04-16 12:50:35] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2014-04-16 12:50:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-16 12:50:35 -0400
+[2014-04-16 12:50:35] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:50:35] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:50:35] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/issues/1/edit" for 127.0.0.1 at 2014-04-16 12:50:38 -0400
+Processing by IssuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT "issues".* FROM "issues" WHERE "issues"."id" = ? LIMIT 1  [["id", "1"]]
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+  Rendered issues/_form.html.erb (43.4ms)
+  Rendered issues/edit.html.erb within layouts/application (52.4ms)
+Completed 200 OK in 60ms (Views: 56.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/issues/1" for 127.0.0.1 at 2014-04-16 12:50:39 -0400
+Processing by IssuesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UYkZmzL5DYh2AoWJ3+jw/LHaJGo73r4bR0Q2F+83mYM=", "issue"=>{"description"=>"First issue, there is not a lot of functionality.", "state"=>"New", "urgency"=>"1"}, "commit"=>"Update Issue", "id"=>"1"}
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT "issues".* FROM "issues" WHERE "issues"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/issues/1
+Completed 302 Found in 22ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2014-04-16 12:50:39 -0400
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT "issues".* FROM "issues" WHERE "issues"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered issues/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-16 12:50:39 -0400
+[2014-04-16 12:50:39] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-16 12:50:39 -0400
+[2014-04-16 12:50:39] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2014-04-16 12:50:39 -0400
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2014-04-16 12:50:39 -0400
+[2014-04-16 12:50:39] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-16 12:50:39 -0400
+[2014-04-16 12:50:39] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 12:50:39] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-16 12:50:39 -0400
+[2014-04-16 12:50:39] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-16 12:50:39 -0400
+[2014-04-16 12:50:39] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-16 12:50:39 -0400
+[2014-04-16 12:50:39] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/issues" for 127.0.0.1 at 2014-04-16 12:50:41 -0400
+Processing by IssuesController#index as HTML
+  [1m[36mIssue Load (2.4ms)[0m  [1mSELECT "issues".* FROM "issues"[0m
+  Rendered issues/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 2.4ms)
+[2014-04-16 12:50:41] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+^C[2014-04-16 12:50:46] INFO  going to shutdown ...
+[2014-04-16 12:50:46] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git add .
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# "The user wants to review  an old issue ticket and view its state - User wants to S[Kselect the urgency for r esolving the issue - Stories[K[K[Kys[K[Kies:[K"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C "The user wants to review an old issue ticket and view its state - User wants to select the urgency for r[1@e[A[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [Cg "The user wants to review an old issue ticket and view its state - User wants to select the urgency for [1@r[A[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [Ci "The user wants to review an old issue ticket and view its state - User wants to select the urgency for[1@ [A[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [C[Ct "The user wants to review an old issue ticket and view its state - User wants to select the urgency fo[1@r[A[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [C[C[C[C "The user wants to review an old issue ticket and view its state - User wants to select the urgency f[1@o[A[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [C[C[C[Cc "The user wants to review an old issue ticket and view its state - User wants to select the urgency [1@f[A[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [C[C[C[C[Co "The user wants to review an old issue ticket and view its state - User wants to select the urgency[1@ [A[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_sy

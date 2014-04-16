@@ -3,7 +3,9 @@ require 'spec_helper'
 describe "issues/edit" do
   before(:each) do
     @issue = assign(:issue, stub_model(Issue,
-      :description => "MyText"
+      :description => "MyText",
+      :state => "MyText",
+      :urgecny => 0
     ))
   end
 
@@ -12,6 +14,8 @@ describe "issues/edit" do
 
     assert_select "form[action=?][method=?]", issue_path(@issue), "post" do
       assert_select "textarea#issue_description[name=?]", "issue[description]"
+      assert_select "select#issue_state[name=?]", "issue[state]"
+      assert_select "select#issue_urgency[name=?]", "issue[urgency]"
     end
   end
 end
