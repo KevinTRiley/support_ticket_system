@@ -5,7 +5,8 @@ describe "issues/show" do
     @issue = assign(:issue, stub_model(Issue,
       :description => "MyText",
       :state => "MyText",
-      :urgency => 0
+      :urgency => 0,
+      :picture => File.new(File.join(Rails.root, 'spec', 'support', 'text-file-icon.png'))
     ))
   end
 

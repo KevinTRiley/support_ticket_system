@@ -4,7 +4,9 @@ describe "issues/new" do
   before(:each) do
     assign(:issue, stub_model(Issue,
       :description => "MyText",
-      :state => "MyText"
+      :state => "MyText",
+      :urgecny => 0,
+      :picture => File.new(File.join(Rails.root, 'spec', 'support', 'text-file-icon.png'))
     ).as_new_record)
   end
 
