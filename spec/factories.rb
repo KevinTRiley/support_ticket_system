@@ -4,6 +4,5 @@ FactoryGirl.define do
     description "issue description"
     state "new"
     urgency 0
-    picture { File.new(File.join(Rails.root, 'spec', 'support', 'text-file-icon.png')) }
   end
 end

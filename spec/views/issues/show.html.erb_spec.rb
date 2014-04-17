@@ -6,7 +6,8 @@ describe "issues/show" do
       :description => "MyText",
       :state => "MyText",
       :urgency => 0,
-      :picture => File.new(File.join(Rails.root, 'spec', 'support', 'text-file-icon.png'))
+      :picture => File.new(File.join(Rails.root, 'spec', 'support', 'text-file-icon.png')),
+      :attachment => File.new(File.join(Rails.root, 'spec', 'support', 'text-file-icon.png'))
     ))
   end
 

@@ -12,9 +12,6 @@
   <strong>Urgency:</strong>
   <%= @issue.urgency %>
 </p>
-<div class="image">
-  <%= image_tag @issue.picture.url(:medium) %>
-</div>
 
 <%= link_to 'Edit', edit_issue_path(@issue) %> |
 <%= link_to 'Back', issues_path %>

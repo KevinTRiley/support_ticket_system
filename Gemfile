@@ -29,8 +29,6 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'haml'
 
-gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
-
 group :test do
   gem 'factory_girl_rails'
 end

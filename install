@@ -5126,4 +5126,229 @@ Failures:
        [31mExpected at least 1 element matching "file#issue_picture", found 0..[0m
        [31mExpected 0 to be >= 1.[0m
 [36m     # ./spec/views/issues/edit.html.erb_spec.rb:19:in `block (3 levels) in <top (required)>'[0m
-[36m     # 
+[36m     # ./spec/views/issues/edit.html.erb_spec.rb:16:in `block (2 levels) in <top (required)>'[0m
+
+  2) issues/new renders new issue form
+     [31mFailure/Error:[0m [31massert_select "file#issue_picture[name=?]", "issue[picture]"[0m
+     [31mMiniTest::Assertion[0m:
+       [31mExpected at least 1 element matching "file#issue_picture[name='issue[picture]']", found 0..[0m
+       [31mExpected 0 to be >= 1.[0m
+[36m     # ./spec/views/issues/new.html.erb_spec.rb:20:in `block (3 levels) in <top (required)>'[0m
+[36m     # ./spec/views/issues/new.html.erb_spec.rb:16:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.84 seconds
+[31m30 examples, 2 failures[0m
+
+Failed examples:
+
+[31mrspec ./spec/views/issues/edit.html.erb_spec.rb:13[0m [36m# issues/edit renders the edit issue form[0m
+[31mrspec ./spec/views/issues/new.html.erb_spec.rb:13[0m [36m# issues/new renders new issue form[0m
+
+Randomized with seed 61635
+
+/usr/bin/ruby1.9.1 -S rspec ./spec/controllers/issues_controller_spec.rb ./spec/helpers/issues_helper_spec.rb ./spec/models/issue_spec.rb ./spec/requests/issues_spec.rb ./spec/routing/issues_routing_spec.rb ./spec/views/issues/edit.html.erb_spec.rb ./spec/views/issues/index.html.erb_spec.rb ./spec/views/issues/new.html.erb_spec.rb ./spec/views/issues/show.html.erb_spec.rb failed
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rake spec
+/usr/bin/ruby1.9.1 -S rspec ./spec/controllers/issues_controller_spec.rb ./spec/helpers/issues_helper_spec.rb ./spec/models/issue_spec.rb ./spec/requests/issues_spec.rb ./spec/routing/issues_routing_spec.rb ./spec/views/issues/edit.html.erb_spec.rb ./spec/views/issues/index.html.erb_spec.rb ./spec/views/issues/new.html.erb_spec.rb ./spec/views/issues/show.html.erb_spec.rb
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+Finished in 1.77 seconds
+[32m30 examples, 0 failures[0m
+
+Randomized with seed 33442
+
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git add .
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git commit 0am [K[K[K[K-am "User want s to take a picture of the issue - Stpry"[K[K[K[Kory"
+[master e3e29ed] User wants to take a picture of the issue - Story
+ 19 files changed, 3800 insertions(+), 9 deletions(-)
+ create mode 100644 db/migrate/20140416170903_add_attachment_photo_to_issues.rb
+ create mode 100644 public/system/issues/pictures/000/000/001/original/text-file-icon.png
+ create mode 100644 public/system/issues/pictures/000/000/002/medium/text-file-icon.png
+ create mode 100644 public/system/issues/pictures/000/000/002/original/text-file-icon.png
+ create mode 100644 public/system/issues/pictures/000/000/002/thumb/text-file-icon.png
+ create mode 100644 spec/support/text-file-icon.png
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git [K[K[K[Kgit push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git[K[K[Kgit push mas[K[K[K[K[K[K[K[K[K[K[K[Kgit config usr[Ker.name "Kev inTRiley"
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git config user.email "ke vin.riley.dev@gmail.com"
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git confi --list
+git: 'confi' is not a git command. See 'git --help'.
+
+Did you mean this?
+	config
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git condif[K[K[Kfig --list
+user.email=kevin.riley.dev@gmail.com
+user.name=KevinTRiley
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+user.name=KevinTRiley
+user.email=kevin.riley.dev@gmail.com
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git push master
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git push origin
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git remote add origin htt p:s[K[Ks://github.com/KevinTRiley/support_ticket_system.git
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git push origin master
+Username for 'https://github.com': kevintriley
+Password for 'https://kevintriley@github.com': 
+remote: Repository not found.
+fatal: repository 'https://github.com/KevinTRiley/support_ticket_system.git/' not found
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git push origin masterremote add origin httpps://github.com/KevinTRiley/support_ticket_system.git
+fatal: remote origin already exists.
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git remote add origin httpps://github.com/KevinTRiley/support_ticket_system.git[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit remote add origin httpps://github.com/KevinTRiley/support_ticket_system.git[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [C[C[C[C[3Ppush origin master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Username for 'https://github.com': kevintriley
+Password for 'https://kevintriley@github.com': 
+Counting objects: 190, done.
+Compressing objects:   0% (1/161)   Compressing objects:   1% (2/161)   Compressing objects:   2% (4/161)   Compressing objects:   3% (5/161)   Compressing objects:   4% (7/161)   Compressing objects:   5% (9/161)   Compressing objects:   6% (10/161)   Compressing objects:   7% (12/161)   Compressing objects:   8% (13/161)   Compressing objects:   9% (15/161)   Compressing objects:  10% (17/161)   Compressing objects:  11% (18/161)   Compressing objects:  12% (20/161)   Compressing objects:  13% (21/161)   Compressing objects:  14% (23/161)   Compressing objects:  15% (25/161)   Compressing objects:  16% (26/161)   Compressing objects:  17% (28/161)   Compressing objects:  18% (29/161)   Compressing objects:  19% (31/161)   Compressing objects:  20% (33/161)   Compressing objects:  21% (34/161)   Compressing objects:  22% (36/161)   Compressing objects:  23% (38/161)   Compressing objects:  24% (39/161)   Compressing objects:  25% (41/161)   Compressing objects:  26% (42/161)   Compressing objects:  27% (44/161)   Compressing objects:  28% (46/161)   Compressing objects:  29% (47/161)   Compressing objects:  30% (49/161)   Compressing objects:  31% (50/161)   Compressing objects:  32% (52/161)   Compressing objects:  33% (54/161)   Compressing objects:  34% (55/161)   Compressing objects:  35% (57/161)   Compressing objects:  36% (58/161)   Compressing objects:  37% (60/161)   Compressing objects:  38% (62/161)   Compressing objects:  39% (63/161)   Compressing objects:  40% (65/161)   Compressing objects:  41% (67/161)   Compressing objects:  42% (68/161)   Compressing objects:  43% (70/161)   Compressing objects:  44% (71/161)   Compressing objects:  45% (73/161)   Compressing objects:  46% (75/161)   Compressing objects:  47% (76/161)   Compressing objects:  48% (78/161)   Compressing objects:  49% (79/161)   Compressing objects:  50% (81/161)   Compressing objects:  51% (83/161)   Compressing objects:  52% (84/161)   Compressing objects:  53% (86/161)   Compressing objects:  54% (87/161)   Compressing objects:  55% (89/161)   Compressing objects:  56% (91/161)   Compressing objects:  57% (92/161)   Compressing objects:  58% (94/161)   Compressing objects:  59% (95/161)   Compressing objects:  60% (97/161)   Compressing objects:  61% (99/161)   Compressing objects:  62% (100/161)   Compressing objects:  63% (102/161)   Compressing objects:  64% (104/161)   Compressing objects:  65% (105/161)   Compressing objects:  66% (107/161)   Compressing objects:  67% (108/161)   Compressing objects:  68% (110/161)   Compressing objects:  69% (112/161)   Compressing objects:  70% (113/161)   Compressing objects:  71% (115/161)   Compressing objects:  72% (116/161)   Compressing objects:  73% (118/161)   Compressing objects:  74% (120/161)   Compressing objects:  75% (121/161)   Compressing objects:  76% (123/161)   Compressing objects:  77% (124/161)   Compressing objects:  78% (126/161)   Compressing objects:  79% (128/161)   Compressing objects:  80% (129/161)   Compressing objects:  81% (131/161)   Compressing objects:  82% (133/161)   Compressing objects:  83% (134/161)   Compressing objects:  84% (136/161)   Compressing objects:  85% (137/161)   Compressing objects:  86% (139/161)   Compressing objects:  87% (141/161)   Compressing objects:  88% (142/161)   Compressing objects:  89% (144/161)   Compressing objects:  90% (145/161)   Compressing objects:  91% (147/161)   Compressing objects:  92% (149/161)   Compressing objects:  93% (150/161)   Compressing objects:  94% (152/161)   Compressing objects:  95% (153/161)   Compressing objects:  96% (155/161)   Compressing objects:  97% (157/161)   Compressing objects:  98% (158/161)   Compressing objects:  99% (160/161)   Compressing objects: 100% (161/161)   Compressing objects: 100% (161/161), done.
+Writing objects:   0% (1/190)   Writing objects:   1% (2/190)   Writing objects:   2% (4/190)   Writing objects:   3% (6/190)   Writing objects:   4% (8/190)   Writing objects:   5% (10/190)   Writing objects:   6% (12/190)   Writing objects:   7% (14/190)   Writing objects:   8% (16/190)   Writing objects:   9% (18/190)   Writing objects:  10% (19/190)   Writing objects:  11% (21/190)   Writing objects:  12% (23/190)   Writing objects:  13% (25/190)   Writing objects:  14% (27/190)   Writing objects:  15% (29/190)   Writing objects:  16% (31/190)   Writing objects:  17% (33/190)   Writing objects:  18% (35/190)   Writing objects:  19% (37/190)   Writing objects:  20% (38/190)   Writing objects:  21% (40/190)   Writing objects:  22% (42/190)   Writing objects:  23% (44/190)   Writing objects:  24% (46/190)   Writing objects:  25% (48/190)   Writing objects:  26% (50/190)   Writing objects:  27% (52/190)   Writing objects:  28% (54/190)   Writing objects:  29% (56/190)   Writing objects:  30% (57/190)   Writing objects:  31% (59/190)   Writing objects:  32% (61/190)   Writing objects:  33% (63/190)   Writing objects:  34% (65/190)   Writing objects:  35% (67/190)   Writing objects:  36% (69/190)   Writing objects:  37% (71/190)   Writing objects:  38% (73/190)   Writing objects:  39% (75/190)   Writing objects:  40% (76/190)   Writing objects:  41% (78/190)   Writing objects:  42% (80/190)   Writing objects:  43% (82/190)   Writing objects:  44% (84/190)   Writing objects:  45% (86/190)   Writing objects:  46% (88/190)   Writing objects:  47% (90/190)   Writing objects:  48% (92/190)   Writing objects:  49% (94/190)   Writing objects:  50% (95/190)   Writing objects:  51% (97/190)   Writing objects:  52% (99/190)   Writing objects:  53% (101/190)   Writing objects:  54% (103/190)   Writing objects:  55% (105/190)   Writing objects:  56% (107/190)   Writing objects:  57% (109/190)   Writing objects:  58% (111/190)   Writing objects:  59% (113/190)   Writing objects:  60% (114/190)   Writing objects:  61% (116/190)   Writing objects:  62% (118/190)   Writing objects:  63% (120/190)   Writing objects:  64% (122/190)   Writing objects:  65% (124/190)   Writing objects:  66% (126/190)   Writing objects:  67% (128/190)   Writing objects:  68% (130/190)   Writing objects:  69% (132/190)   Writing objects:  70% (133/190)   Writing objects:  71% (135/190)   Writing objects:  72% (137/190)   Writing objects:  73% (139/190)   Writing objects:  74% (141/190)   Writing objects:  75% (143/190)   Writing objects:  76% (145/190)   Writing objects:  77% (147/190)   Writing objects:  78% (149/190)   Writing objects:  79% (151/190)   Writing objects:  80% (152/190)   Writing objects:  81% (154/190)   Writing objects:  82% (156/190)   Writing objects:  83% (158/190)   Writing objects:  84% (160/190)   Writing objects:  85% (162/190)   Writing objects:  86% (164/190)   Writing objects:  87% (166/190)   Writing objects:  88% (168/190)   Writing objects:  89% (170/190)   Writing objects:  90% (171/190)   Writing objects:  91% (173/190)   Writing objects:  92% (175/190)   Writing objects:  93% (177/190)   Writing objects:  94% (179/190)   Writing objects:  95% (181/190)   Writing objects:  96% (183/190)   Writing objects:  97% (185/190)   Writing objects:  98% (187/190)   Writing objects:  99% (189/190)   Writing objects: 100% (190/190)   Writing objects: 100% (190/190), 71.18 KiB | 0 bytes/s, done.
+Total 190 (delta 53), reused 0 (delta 0)
+To https://github.com/KevinTRiley/support_ticket_system.git
+ * [new branch]      master -> master
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# git push origin masterremote add origin httpps://github.com/KevinTRiley/support_ticket_system.git[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [C[C[C[C[3Ppush origin master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cremote add origin httpps://github.com/KevinTRiley/support_ticket_system.git[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [C[C[C[C[3Ppush origin master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kmasterorigin master[5Pconfig --list[1P --listg user.email "kevvin.riley.dev@gmail.com"[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cname "Kevi[15PnTRiley"[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [C[C[C[Cpush[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -am "User wantss to take a picture of the issue - Story"[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [C[C[C[Cadd .[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crake specils server[3Pke specils server[3Pke specils server[3Pke specils serverke db:migrateils generate paperclip iissue photo[A]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# [C[C[10Pke db:migrate
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cils generate paperclip iissue photo[K[K[K[K[Kattachment
+[1m[32m      create[0m  db/migrate/20140416191524_add_attachment_attachment_to_issues.rb
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rake db:migrate
+
+==  AddAttachmentAttachmentToIssues: migrating ================================
+-- change_table(:issues)
+   -> 0.0015s
+==  AddAttachmentAttachmentToIssues: migrated (0.0016s) =======================
+
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# 
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rK[Kake spec
+/usr/bin/ruby1.9.1 -S rspec ./spec/controllers/issues_controller_spec.rb ./spec/helpers/issues_helper_spec.rb ./spec/models/issue_spec.rb ./spec/requests/issues_spec.rb ./spec/routing/issues_routing_spec.rb ./spec/views/issues/edit.html.erb_spec.rb ./spec/views/issues/index.html.erb_spec.rb ./spec/views/issues/new.html.erb_spec.rb ./spec/views/issues/show.html.erb_spec.rb
+db  [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+Finished in 1.85 seconds
+[32m30 examples, 0 failures[0m
+
+Randomized with seed 46849
+
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# rails server
+=> Booting WEBrick
+=> Rails 4.0.0 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2014-04-16 15:21:42] INFO  WEBrick 1.3.1
+[2014-04-16 15:21:42] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2014-04-16 15:21:42] INFO  WEBrick::HTTPServer#start: pid=11368 port=3000
+
+
+Started GET "/issues/" for 127.0.0.1 at 2014-04-16 15:21:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IssuesController#index as HTML
+  [1m[35mIssue Load (0.3ms)[0m  SELECT "issues".* FROM "issues"
+  Rendered issues/index.html.erb within layouts/application (41.6ms)
+Completed 200 OK in 150ms (Views: 93.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-16 15:21:48 -0400
+[2014-04-16 15:21:48] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-16 15:21:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-16 15:21:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-16 15:21:48 -0400
+[2014-04-16 15:21:48] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 15:21:48] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 15:21:48] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-16 15:21:48 -0400
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2014-04-16 15:21:48 -0400
+[2014-04-16 15:21:48] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2014-04-16 15:21:48] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2014-04-16 15:21:48 -0400
+[2014-04-16 15:21:48] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-16 15:21:48 -0400
+[2014-04-16 15:21:48] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/issues/new" for 127.0.0.1 at 2014-04-16 15:21:51 -0400
+Processing by IssuesController#new as HTML
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+  Rendered issues/_form.html.erb (58.7ms)
+  Rendered issues/new.html.erb within layouts/application (68.5ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+^C[2014-04-16 15:44:00] INFO  going to shutdown ...
+[2014-04-16 15:44:00] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;root@username-virtual-machine: ~/support_ticket_systemroot@username-virtual-machine:~/support_ticket_system# exit
+exit
+
+Script done on Wed 16 Apr 2014 03:44:03 PM EDT
