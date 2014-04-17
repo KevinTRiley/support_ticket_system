@@ -26,9 +26,14 @@
                  prompt: "Select the urgency" %>
   </div>
   <div class="field">
-    <%= image_tag(@issue.picture_url) if @issue.picture? %>
+    <%= f.label :picture %><br>
     <%= f.file_field :picture %>
     <%= f.hidden_field :picture_cache %>
+  </div>
+  <div class="field">
+    <%= f.label :attachment %><br>
+    <%= f.file_field :attachment %>
+    <%= f.hidden_field :attachment_cache %>
   </div>
   <div class="actions">
     <%= f.submit %>
