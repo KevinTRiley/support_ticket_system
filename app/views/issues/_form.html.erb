@@ -25,6 +25,11 @@
     <%= f.select :urgency, Issue::URGENCY_OPTIONS,
                  prompt: "Select the urgency" %>
   </div>
+  <div class="field">
+    <%= image_tag(@issue.picture_url) if @issue.picture? %>
+    <%= f.file_field :picture %>
+    <%= f.hidden_field :picture_cache %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

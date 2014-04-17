@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'haml'
 
+gem 'carrierwave'
+
 group :test do
   gem 'factory_girl_rails'
 end

@@ -13,5 +13,9 @@
   <%= @issue.urgency %>
 </p>
 
+<div>
+    <%= image_tag(@issue.picture_url) if @issue.picture? %>
+</div>
+
 <%= link_to 'Edit', edit_issue_path(@issue) %> |
 <%= link_to 'Back', issues_path %>

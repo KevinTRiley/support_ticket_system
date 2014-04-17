@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140416191524) do
+ActiveRecord::Schema.define(version: 20140417144147) do
 
   create_table "issues", force: true do |t|
     t.text     "description"
@@ -19,19 +19,7 @@ ActiveRecord::Schema.define(version: 20140416191524) do
     t.datetime "updated_at"
     t.string   "state"
     t.integer  "urgency"
-    t.string   "photo_file_name"
-    t.string   "photo_content_type"
-    t.integer  "photo_file_size"
-    t.datetime "photo_updated_at"
-    t.string   "photo"
-    t.string   "picture_file_name"
-    t.string   "picture_content_type"
-    t.integer  "picture_file_size"
-    t.datetime "picture_updated_at"
-    t.string   "attachment_file_name"
-    t.string   "attachment_content_type"
-    t.integer  "attachment_file_size"
-    t.datetime "attachment_updated_at"
+    t.string   "picture"
   end
 
 end
