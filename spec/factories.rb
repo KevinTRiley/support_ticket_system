@@ -4,5 +4,6 @@ FactoryGirl.define do
     description "issue description"
     state "new"
     urgency 0
+    email "to@example.org"
   end
 end

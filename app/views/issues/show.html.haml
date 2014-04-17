@@ -1,0 +1,23 @@
+#notice
+  %p= notice
+%p
+  %strong.code#message Description:
+  = @issue.description
+%p
+  %strong.code#message State:
+  = @issue.state
+%p
+  %strong.code#message Urgency:
+  = @issue.urgency
+%p
+  %strong.code#message Picture:
+  =image_tag @issue.picture_url
+%p
+  %strong.code#message Attachment:
+  = @issue.attachment
+%p
+  %strong.code#message Email:
+  = @issue.email
+
+= link_to 'Edit', edit_issue_path(@issue)
+= link_to 'Back', issues_path

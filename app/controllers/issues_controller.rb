@@ -42,6 +42,9 @@ class IssuesController < ApplicationController
   def update
     respond_to do |format|
       if @issue.update(issue_params)
+        if @issue.state.to_s == "Resolved"
+          IssueNotifier.resolved(@issue).deliver
+        end
         format.html { redirect_to @issue, notice: 'Issue was successfully updated.' }
         format.json { head :no_content }
       else
@@ -69,6 +72,6 @@ class IssuesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def issue_params
-      params.require(:issue).permit(:description, :state, :urgency, :picture, :attachment)
+      params.require(:issue).permit(:description, :state, :urgency, :picture, :attachment, :email)
     end
 end
