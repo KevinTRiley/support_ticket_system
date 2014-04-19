@@ -12,10 +12,12 @@
     = f.text_area :description
   .field
     = f.label :state
-    = f.select :state, options_for_select([["Select...", ""]] + Issue::STATE_OPTIONS)
+    //= f.select :state, options_for_select(Issue::STATE_OPTIONS), :include_blank => 'Select Ticket State'
+    = f.select :state, options_for_select([["Select Ticket State",""]] + Issue::STATE_OPTIONS, @issue[:state])
   .field
     = f.label :urgency
-    = f.select :urgency, options_for_select([["Select...", ""]] + Issue::URGENCY_OPTIONS)
+    //= f.select :urgency, options_for_select(Issue::URGENCY_OPTIONS), :include_blank => 'Select Ticket Urgency'
+    = f.select :urgency, options_for_select([["Select Ticket Urgency",""]] + Issue::URGENCY_OPTIONS, @issue[:urgency])
   .field
     = f.label :picture
     = f.file_field :picture
