@@ -11,7 +11,8 @@
   = @issue.urgency
 %p
   %strong.code#message Picture:
-  =image_tag @issue.picture_url
+  - if @issue.picture_url
+    =image_tag @issue.picture_url
 %p
   %strong.code#message Attachment:
   = @issue.attachment
