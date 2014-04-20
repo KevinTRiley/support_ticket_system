@@ -31,33 +31,33 @@ describe IssuesController do
   let(:valid_session) { {} }
 
   describe "GET index" do
-    it "assigns all issues as @issues" do
+    it "Without authorization - cannot assign all issues as @issues" do
       issue = Issue.create! valid_attributes
       get :index, {}, valid_session
-      expect(assigns(:issues)).to eq([issue])
+      expect(assigns(:issues)).to eq(nil)
     end
   end
 
   describe "GET show" do
-    it "assigns the requested issue as @issue" do
+    it "Without authorization - cannot assign the requested issue as @issue" do
       issue = Issue.create! valid_attributes
       get :show, {:id => issue.to_param}, valid_session
-      expect(assigns(:issue)).to eq(issue)
+      expect(assigns(:issue)).to eq(nil)
     end
   end
 
-  describe "GET new" do
+  describe "Without authentication - cannot GET new" do
     it "assigns a new issue as @issue" do
       get :new, {}, valid_session
-      expect(assigns(:issue)).to be_a_new(Issue)
+      expect(assigns(:issue)).not_to be_a_new(Issue)
     end
   end
 
-  describe "GET edit" do
+  describe "Without authentication - cannot GET edit" do
     it "assigns the requested issue as @issue" do
       issue = Issue.create! valid_attributes
-      get :edit, {:id => issue.to_param}, valid_session
-      expect(assigns(:issue)).to eq(issue)
+      get :edit, {:id => issue.id}, valid_session
+      expect(assigns(:issue)).to eq(nil)
     end
   end
 

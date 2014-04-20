@@ -1,4 +1,5 @@
 class IssuesController < ApplicationController
+  skip_before_action :authorize, only: [:create, :update, :destroy]
   before_action :set_issue, only: [:show, :edit, :update, :destroy]
 
   # GET /issues
