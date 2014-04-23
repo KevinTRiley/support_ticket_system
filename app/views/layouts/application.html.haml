@@ -7,4 +7,8 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
+    %ul{:class => "nav nav-tabs"}
+      %li{:class => "#{params[:controller] == 'issues' ? 'active' : ''}"}= link_to 'Issues', issues_path
+      %li{:class => "#{params[:controller] == 'users' ? 'active' : ''}"}= link_to 'Users', users_path
+      %li{:class => "#{params[:controller] == 'devices' ? 'active' : ''}"}= link_to 'Devices', devices_path
     = yield

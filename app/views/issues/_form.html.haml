@@ -7,27 +7,30 @@
       %ul
         - @issue.errors.full_messages.each do |msg|
           %li= msg
-  .field
+  .field{:class => "form-group"}
     = f.label :description
-    = f.text_area :description
-  .field
+    = f.text_area :description, :class => "form-control"
+  .field{:class => "form-group"}
     = f.label :state
     //= f.select :state, options_for_select(Issue::STATE_OPTIONS), :include_blank => 'Select Ticket State'
-    = f.select :state, options_for_select([["Select Ticket State",""]] + Issue::STATE_OPTIONS, @issue[:state])
-  .field
+    = f.select :state, options_for_select([["Select Ticket State",""]] + Issue::STATE_OPTIONS, @issue[:state]), {}, :class => "form-control"
+  .field{:class => "form-group"}
     = f.label :urgency
     //= f.select :urgency, options_for_select(Issue::URGENCY_OPTIONS), :include_blank => 'Select Ticket Urgency'
-    = f.select :urgency, options_for_select([["Select Ticket Urgency",""]] + Issue::URGENCY_OPTIONS, @issue[:urgency])
-  .field
+    = f.select :urgency, options_for_select([["Select Ticket Urgency",""]] + Issue::URGENCY_OPTIONS, @issue[:urgency]), {}, :class => "form-control"
+  .field{:class => "form-group"}
     = f.label :picture
     = f.file_field :picture
     = f.hidden_field :picture_cache
-  .field
+  .field{:class => "form-group"}
     = f.label :attachment
     = f.file_field :attachment
     = f.hidden_field :attachment_cache
-  .field
+  .field{:class => "form-group"}
     = f.label :email
-    = f.text_field :email
+    = f.text_field :email, :class => "form-control"
+  .field{:class => "form-group"}
+    = f.label :device_id
+    = f.select :device_id, options_for_select([["Select Ticket Device",""]] + @devices, @issue[:device_id]), {}, :class => "form-control"
   .actions
-    = f.button :submit
+    = f.button :submit, :class => "btn btn-primary"

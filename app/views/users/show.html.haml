@@ -3,5 +3,5 @@
 %p
   %strong.code#message Email:
   = @user.email
-= link_to 'Edit', edit_user_path(@issue)
-= link_to 'Back', users_path
+= link_to 'Edit', edit_user_path(@issue), :class => "btn btn-default"
+= link_to 'Back', users_path, :class => "btn btn-default"

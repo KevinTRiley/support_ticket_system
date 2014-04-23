@@ -19,6 +19,10 @@
 %p
   %strong.code#message Email:
   = @issue.email
+%p
+  %strong.code#message Device:
+  - if @issue.device_id
+    = link_to Device.find(@issue.device_id).name, Device.find(@issue.device_id)
 
-= link_to 'Edit', edit_issue_path(@issue)
-= link_to 'Back', issues_path
+= link_to 'Edit', edit_issue_path(@issue), :class => "btn btn-default"
+= link_to 'Back', issues_path, :class => "btn btn-default"

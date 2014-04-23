@@ -7,14 +7,14 @@
       %ul
         - @user.errors.full_messages.each do |msg|
           %li= msg
-  .field
+  .field{:class => "form-group"}
     = f.label :email
-    = f.text_field :email
-  .field
+    = f.text_field :email, :class => "form-control"
+  .field{:class => "form-group"}
     = f.label :password
-    = f.password_field :password
-  %div
+    = f.password_field :password, :class => "form-control"
+  %div{:class => "form-group"}
     = f.label :password_confirmation
-    = f.password_field :password_confirmation
+    = f.password_field :password_confirmation, :class => "form-control"
   .actions
-    = f.button :submit
+    = f.button :submit, :class => "btn btn-primary"

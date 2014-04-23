@@ -15,10 +15,12 @@ class IssuesController < ApplicationController
   # GET /issues/new
   def new
     @issue = Issue.new
+    @devices = Device.all.map { |device| [device.name, device.id] }
   end
 
   # GET /issues/1/edit
   def edit
+    @devices = Device.all.map { |device| [device.name, device.id] }
   end
 
   # POST /issues
@@ -72,6 +74,6 @@ class IssuesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def issue_params
-      params.require(:issue).permit(:description, :state, :urgency, :picture, :attachment, :email)
+      params.require(:issue).permit(:description, :state, :urgency, :picture, :attachment, :email, :device_id)
     end
 end

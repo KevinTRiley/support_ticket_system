@@ -1,4 +1,6 @@
 SupportTicketSystem::Application.routes.draw do
+  resources :devices
+
   get 'admin' => 'admin#index'
 
   controller :sessions do
