@@ -1,11 +1,19 @@
 class IssuesController < ApplicationController
   before_action :set_issue, only: [:show, :edit, :update, :destroy]
-  before_action :set_devices
+  before_action :set_devices, :set_platforms
 
   # GET /issues
   # GET /issues.json
   def index
-    @issues = Issue.all
+    #@issues = Issue.all
+    @devices = Device.all
+
+    devicesMostRecentIssues = Array.new
+    # Sort each device issues by created_at descending and add the first record to the array
+    @devices.each { |device| devicesMostRecentIssues.push(device.issues.find(:first, :order => "created_at desc")) }
+    # Sort each unique issue by created_at descending
+    @issues = devicesMostRecentIssues.sort { |x, y| x.created_at <=> y.created_at}
+
   end
 
   # GET /issues/1
@@ -74,9 +82,12 @@ class IssuesController < ApplicationController
     def set_devices
       @devices = Device.all.map { |device| [device.name, device.id] }
     end
+    def set_platforms
+      @platforms = Platform.all.map { |platform| [platform.name, platform.id] }
+    end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def issue_params
-      params.require(:issue).permit(:description, :state, :urgency, :picture, :attachment, :email, :device_id)
+      params.require(:issue).permit(:description, :state, :urgency, :picture, :attachment, :email, :device_id, :platform_id)
     end
 end

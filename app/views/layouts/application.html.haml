@@ -11,4 +11,5 @@
       %li{:class => "#{params[:controller] == 'issues' ? 'active' : ''}"}= link_to 'Issues', issues_path
       %li{:class => "#{params[:controller] == 'users' ? 'active' : ''}"}= link_to 'Users', users_path
       %li{:class => "#{params[:controller] == 'devices' ? 'active' : ''}"}= link_to 'Devices', devices_path
+      %li{:class => "#{params[:controller] == 'platforms' ? 'active' : ''}"}= link_to 'Platforms', platforms_path
     = yield

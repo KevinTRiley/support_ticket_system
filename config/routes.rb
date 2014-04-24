@@ -1,4 +1,6 @@
 SupportTicketSystem::Application.routes.draw do
+  resources :platforms
+
   resources :devices
 
   get 'admin' => 'admin#index'

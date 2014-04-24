@@ -10,6 +10,7 @@ class DevicesController < ApplicationController
   # GET /devices/1
   # GET /devices/1.json
   def show
+    @issues = Issue.all.where(:device_id => @device.id).order("created_at desc")
   end
 
   # GET /devices/new

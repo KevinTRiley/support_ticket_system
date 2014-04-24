@@ -23,6 +23,10 @@
   %strong.code#message Device:
   - if @issue.device_id
     = link_to Device.find(@issue.device_id).name, Device.find(@issue.device_id)
+%p
+  %strong.code#message Platform:
+  - if @issue.platform_id
+    = link_to Platform.find(@issue.platform_id).name, Platform.find(@issue.platform_id)
 
 = link_to 'Edit', edit_issue_path(@issue), :class => "btn btn-default"
 = link_to 'Back', issues_path, :class => "btn btn-default"

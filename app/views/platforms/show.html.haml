@@ -1,0 +1,7 @@
+#notice
+  %p= notice
+%p
+  %strong.code#message Name:
+  = @platform.name
+= link_to 'Edit', edit_platform_path(@platform), :class => "btn btn-default"
+= link_to 'Back', platforms_path, :class => "btn btn-default"
