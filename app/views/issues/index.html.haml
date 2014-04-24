@@ -5,6 +5,7 @@
       %tr
         %th ID
         %th Description
+        %th Created At
         %th State
         %th Urgency
         %th Email
@@ -17,12 +18,13 @@
         %tr
           %td= issue.id
           %td= issue.description
+          %td= (issue.created_at ? issue.created_at.to_formatted_s(:long_date_short_time):nil)
           %td= issue.state
           %td= issue.urgency
           %td= issue.email
           %td
             - if issue.device_id
-              = Device.find(issue.device_id).name
+              = link_to Device.find(issue.device_id).name, Device.find(issue.device_id)
           %td= link_to 'Show', issue
           %td= link_to 'Edit', edit_issue_path(issue)
           %td= link_to 'Destroy', issue, method: :delete, data: { confirm: 'Are you sure?' }

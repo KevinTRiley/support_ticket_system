@@ -1,5 +1,6 @@
 class IssuesController < ApplicationController
   before_action :set_issue, only: [:show, :edit, :update, :destroy]
+  before_action :set_devices
 
   # GET /issues
   # GET /issues.json
@@ -15,12 +16,10 @@ class IssuesController < ApplicationController
   # GET /issues/new
   def new
     @issue = Issue.new
-    @devices = Device.all.map { |device| [device.name, device.id] }
   end
 
   # GET /issues/1/edit
   def edit
-    @devices = Device.all.map { |device| [device.name, device.id] }
   end
 
   # POST /issues
@@ -42,6 +41,7 @@ class IssuesController < ApplicationController
   # PATCH/PUT /issues/1
   # PATCH/PUT /issues/1.json
   def update
+
     respond_to do |format|
       if @issue.update(issue_params)
         if @issue.state.to_s == "Resolved"
@@ -70,6 +70,9 @@ class IssuesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_issue
       @issue = Issue.find(params[:id])
+    end
+    def set_devices
+      @devices = Device.all.map { |device| [device.name, device.id] }
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

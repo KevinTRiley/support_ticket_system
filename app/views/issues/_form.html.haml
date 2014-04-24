@@ -31,6 +31,6 @@
     = f.text_field :email, :class => "form-control"
   .field{:class => "form-group"}
     = f.label :device_id
-    = f.select :device_id, options_for_select([["Select Ticket Device",""]] + @devices, @issue[:device_id]), {}, :class => "form-control"
+    = f.select :device_id, options_for_select([["Select Ticket Device",""]] + (@devices ? @devices:[[]]), @issue[:device_id]), {}, :class => "form-control"
   .actions
     = f.button :submit, :class => "btn btn-primary"

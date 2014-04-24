@@ -4,12 +4,10 @@ describe "devices/index" do
   before(:each) do
     assign(:devices, [
       stub_model(Device,
-        :name => "Name",
-        :issue => ""
+        :name => "Name"
       ),
       stub_model(Device,
-        :name => "Name",
-        :issue => ""
+        :name => "Name"
       )
     ])
   end
@@ -17,6 +15,5 @@ describe "devices/index" do
   it "renders a list of devices" do
     render
     assert_select "tr>td", :text => "Name".to_s, :count => 2
-    assert_select "tr>td", :text => "".to_s, :count => 2
   end
 end

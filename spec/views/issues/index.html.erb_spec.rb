@@ -6,12 +6,14 @@ describe "issues/index" do
       stub_model(Issue,
         :description => "Description",
         :state => "State",
-        :urgency => 0
+        :urgency => 0,
+        :email => "test@email.com"
       ),
       stub_model(Issue,
         :description => "Description",
         :state => "State",
-        :urgency => 0
+        :urgency => 0,
+        :email => "test@email.com"
       )
     ])
   end
