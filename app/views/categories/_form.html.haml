@@ -1,0 +1,15 @@
+= form_for @category, :html => { :multipart => true } do |f|
+  - if @category.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@category.errors.count, "error")
+        prohibited this category from being saved:
+      %ul
+        - @category.errors.full_messages.each do |msg|
+          %li= msg
+  .field{:class => "form-group"}
+    = f.label :name
+    = f.text_field :name, :class => "form-control"
+  .field{:class => "form-group"}
+  .actions
+    = f.button :submit, :class => "btn btn-primary"

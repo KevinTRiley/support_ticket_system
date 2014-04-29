@@ -35,5 +35,8 @@
   .field{:class => "form-group"}
     = f.label :platform_id
     = f.select :platform_id, options_for_select([["Select Current Platform",""]] + (@platforms ? @platforms:[[]]), @issue[:platform_id]), {}, :class => "form-control"
+  .field{:class => "form-group"}
+    = f.label :category_id
+    = f.select :category_id, options_for_select([["Select Issue Category",""]] + (@categories ? @categories:[[]]), @issue[:category_id]), {}, :class => "form-control"
   .actions
     = f.button :submit, :class => "btn btn-primary"

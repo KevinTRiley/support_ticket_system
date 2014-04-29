@@ -1,4 +1,6 @@
 SupportTicketSystem::Application.routes.draw do
+  resources :categories
+
   resources :platforms
 
   resources :devices

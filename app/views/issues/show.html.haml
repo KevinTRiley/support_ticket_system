@@ -27,6 +27,9 @@
   %strong.code#message Platform:
   - if @issue.platform_id
     = link_to Platform.find(@issue.platform_id).name, Platform.find(@issue.platform_id)
-
+%p
+  %strong.code#message Category:
+  - if @issue.category_id
+    = link_to Category.find(@issue.category_id).name, Category.find(@issue.category_id)
 = link_to 'Edit', edit_issue_path(@issue), :class => "btn btn-default"
 = link_to 'Back', issues_path, :class => "btn btn-default"

@@ -1,6 +1,6 @@
 class IssuesController < ApplicationController
   before_action :set_issue, only: [:show, :edit, :update, :destroy]
-  before_action :set_devices, :set_platforms
+  before_action :set_devices, :set_platforms, :set_categories
 
   # GET /issues
   # GET /issues.json
@@ -84,9 +84,12 @@ class IssuesController < ApplicationController
     def set_platforms
       @platforms = Platform.all.map { |platform| [platform.name, platform.id] }
     end
+    def set_categories
+      @categories = Category.all.map { |category| [category.name, category.id] }
+    end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def issue_params
-      params.require(:issue).permit(:description, :state, :urgency, :picture, :attachment, :email, :device_id, :platform_id)
+      params.require(:issue).permit(:description, :state, :urgency, :picture, :attachment, :email, :device_id, :platform_id, :category_id)
     end
 end

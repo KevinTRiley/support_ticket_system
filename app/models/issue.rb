@@ -1,6 +1,7 @@
 class Issue < ActiveRecord::Base
   belongs_to :device
   has_one :platform
+  has_one :category
   mount_uploader :picture, PictureUploader
   mount_uploader :attachment, AttachmentUploader
   validates :description, :state, :urgency, :email, :device_id, :platform_id, presence: true
