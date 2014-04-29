@@ -7,17 +7,21 @@ class IssuesController < ApplicationController
   def index
     @issues = Issue.all.sort { |x, y| x.created_at <=> y.created_at}
     @devices = Device.all
-    #devicesMostRecentIssues = Array.new
-    # Sort each device issues by created_at descending and add the first record to the array
-    #@devices.each { |device| devicesMostRecentIssues.push(device.issues.find(:first, :order => "created_at desc")) }
-    # Sort each unique issue by created_at descending
-    #@issues = devicesMostRecentIssues.sort { |x, y| x.created_at <=> y.created_at}
 
+    respond_to do |format|
+      format.html
+      format.json { render json: @issues }
+    end
   end
 
   # GET /issues/1
   # GET /issues/1.json
   def show
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @issue }
+    end
   end
 
   # GET /issues/new

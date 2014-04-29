@@ -5,11 +5,20 @@ class RecipientsController < ApplicationController
   # GET /recipients.json
   def index
     @recipients = Recipient.all
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @recipients }
+    end
   end
 
   # GET /recipients/1
   # GET /recipients/1.json
   def show
+    respond_to do |format|
+      format.html
+      format.json { render json: @recipient }
+    end
   end
 
   # GET /recipients/new

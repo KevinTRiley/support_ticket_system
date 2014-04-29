@@ -5,12 +5,22 @@ class PlatformsController < ApplicationController
   # GET /platforms.json
   def index
     @platforms = Platform.all
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @platforms }
+    end
   end
 
   # GET /platforms/1
   # GET /platforms/1.json
   def show
     @issues = Issue.all.where(:platform_id => @platform.id).order("created_at asc")
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @platform }
+    end
   end
 
   # GET /platforms/new

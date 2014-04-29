@@ -1,15 +1,28 @@
 SupportTicketSystem::Application.routes.draw do
+
+  namespace :api, defaults: {format: 'json'} do
+    namespace :v1 do
+      resources :recipients
+      resources :recipient_lists
+      resources :categories
+      resources :platforms
+      resources :devices
+      resources :users
+      resources :issues
+    end
+  end
+
   resources :recipients
-
   resources :recipient_lists
-
   resources :categories
-
   resources :platforms
-
   resources :devices
+  resources :users
+  resources :issues
 
   get 'admin' => 'admin#index'
+  get "sessions/create"
+  get "sessions/destroy"
 
   controller :sessions do
     get  'login' => :new
@@ -17,12 +30,7 @@ SupportTicketSystem::Application.routes.draw do
     delete 'logout' => :destroy
   end
 
-  get "sessions/create"
-  get "sessions/destroy"
 
-  resources :users
-
-  resources :issues
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
