@@ -3,11 +3,10 @@
   %table{:class => "table table-striped table-bordered table-condensed table-hover"}
     - Platform.all.each do |platform|
       %tr
-        %th{:colspan => 12}= platform.name
+        %th{:colspan => 11}= link_to Platform.find(platform.id).name, Platform.find(platform)
       %tr
         %th ID
         %th Device
-        %th Platform
         %th Category
         %th Description
         %th Created At
@@ -21,7 +20,6 @@
             %tr
               %td= issue.id
               %td= link_to Device.find(issue.device_id).name, Device.find(issue.device_id)
-              %td= link_to Platform.find(issue.platform_id).name, Platform.find(issue.platform_id)
               %td= link_to Category.find(issue.category_id).name, Platform.find(issue.category_id)
               %td= issue.description
               %td= issue.created_at.to_formatted_s(:long_date_short_time)

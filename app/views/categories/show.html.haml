@@ -3,7 +3,7 @@
 %p
   %strong.code#message Name:
   = @category.name
-= link_to 'Edit', edit_device_path(@category), :class => "btn btn-default"
+= link_to 'Edit', edit_device_path(@device), :class => "btn btn-default"
 = link_to 'Back', categories_path, :class => "btn btn-default"
 %h1 Listing issues for #{@category.name}
 .table-responsive

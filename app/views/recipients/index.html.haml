@@ -1,0 +1,20 @@
+%h1 Listing recipients
+.table-responsive
+  %table{:class => "table table-striped table-bordered table-condensed table-hover"}
+    %thead
+      %tr
+        %th ID
+        %th Name
+        %th Email
+        %th{:colspan => 3}
+    %tbody
+      - @recipients.each do |recipient|
+        %tr
+          %td= recipient.id
+          %td= recipient.name
+          %td= recipient.email
+          %td= link_to 'Show', recipient
+          %td= link_to 'Edit', edit_recipient_path(recipient)
+          %td= link_to 'Destroy', recipient, method: :delete, data: { confirm: 'Are you sure?' }
+%br
+= link_to 'New recipient', new_recipient_path, :class => "btn btn-primary"

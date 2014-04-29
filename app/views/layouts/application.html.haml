@@ -13,4 +13,5 @@
       %li{:class => "#{params[:controller] == 'devices' ? 'active' : ''}"}= link_to 'Devices', devices_path
       %li{:class => "#{params[:controller] == 'platforms' ? 'active' : ''}"}= link_to 'Platforms', platforms_path
       %li{:class => "#{params[:controller] == 'categories' ? 'active' : ''}"}= link_to 'Categories', categories_path
+      %li{:class => "#{params[:controller] == 'recipients' ? 'active' : ''}"}= link_to 'Recipient List', recipients_path
     = yield

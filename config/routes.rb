@@ -1,4 +1,8 @@
 SupportTicketSystem::Application.routes.draw do
+  resources :recipients
+
+  resources :recipient_lists
+
   resources :categories
 
   resources :platforms
