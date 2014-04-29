@@ -3,18 +3,58 @@
   %table{:class => "table table-striped table-bordered table-condensed table-hover"}
     %thead
       %tr
+        %th{:colspan => 5} Device
+        %th{:colspan => 10} Most Recent Issue
+      %tr
         %th ID
         %th Name
-        %th
-        %th
-        %th
+        %th{:colspan => 3}
+        %th ID
+        %th Platform
+        %th Description
+        %th Created At
+        %th State
+        %th Urgency
+        %th Resolved At (updated_at)
+        %th{:colspan => 3}
     %tbody
       - @devices.each do |device|
-        %tr
-          %td= device.id
-          %td= device.name
-          %td= link_to 'Show', device
-          %td= link_to 'Edit', edit_device_path(device)
-          %td= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' }
+      - issue = device.most_recent_unresolved_issue
+        - if issue
+          %tr
+            %td= device.id
+            %td= device.name
+            %td= link_to 'Show', device
+            %td= link_to 'Edit', edit_device_path(device)
+            %td= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' }
+            %td= issue.id
+            %td= link_to Platform.find(issue.platform_id).name, Platform.find(issue.platform_id)
+            %td= issue.description
+            %td= issue.created_at.to_formatted_s(:long_date_short_time)
+            %td= issue.state
+            %td= issue.urgency
+            %td
+            %td= link_to 'Show', issue
+            %td= link_to 'Edit', edit_issue_path(issue)
+            %td= link_to 'Destroy', issue, method: :delete, data: { confirm: 'Are you sure?' }
+      - @devices.each do |device|
+      - issue = device.most_recent_resolved_issue
+        - if issue && device.are_all_issues_resolved
+          %tr
+            %td= device.id
+            %td= device.name
+            %td= link_to 'Show', device
+            %td= link_to 'Edit', edit_device_path(device)
+            %td= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' }
+            %td= issue.id
+            %td= link_to Platform.find(issue.platform_id).name, Platform.find(issue.platform_id)
+            %td= issue.description
+            %td= issue.created_at.to_formatted_s(:long_date_short_time)
+            %td= issue.state
+            %td= issue.urgency
+            %td= issue.updated_at.to_formatted_s(:long_date_short_time)
+            %td= link_to 'Show', issue
+            %td= link_to 'Edit', edit_issue_path(issue)
+            %td= link_to 'Destroy', issue, method: :delete, data: { confirm: 'Are you sure?' }
 %br
 = link_to 'New Device', new_device_path, :class => "btn btn-primary"

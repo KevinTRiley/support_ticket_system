@@ -10,6 +10,7 @@ class PlatformsController < ApplicationController
   # GET /platforms/1
   # GET /platforms/1.json
   def show
+    @issues = Issue.all.where(:platform_id => @platform.id).order("created_at asc")
   end
 
   # GET /platforms/new

@@ -30,130 +30,270 @@ describe PlatformsController do
   # PlatformsController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
-  describe "GET index" do
-    it "assigns all platforms as @platforms" do
-      platform = Platform.create! valid_attributes
-      get :index, {}, valid_session
-      expect(assigns(:platforms)).to eq([platform])
-    end
-  end
+  context "With authorization" do
+    let!(:user) { FactoryGirl.build_stubbed(:user) }
 
-  describe "GET show" do
-    it "assigns the requested platform as @platform" do
-      platform = Platform.create! valid_attributes
-      get :show, {:id => platform.to_param}, valid_session
-      expect(assigns(:platform)).to eq(platform)
-    end
-  end
+    let(:valid_session) { {"user_id" => user.id} }
 
-  describe "GET new" do
-    it "assigns a new platform as @platform" do
-      get :new, {}, valid_session
-      expect(assigns(:platform)).to be_a_new(Platform)
-    end
-  end
-
-  describe "GET edit" do
-    it "assigns the requested platform as @platform" do
-      platform = Platform.create! valid_attributes
-      get :edit, {:id => platform.to_param}, valid_session
-      expect(assigns(:platform)).to eq(platform)
-    end
-  end
-
-  describe "POST create" do
-    describe "with valid params" do
-      it "creates a new Platform" do
-        expect {
-          post :create, {:platform => valid_attributes}, valid_session
-        }.to change(Platform, :count).by(1)
-      end
-
-      it "assigns a newly created platform as @platform" do
-        post :create, {:platform => valid_attributes}, valid_session
-        expect(assigns(:platform)).to be_a(Platform)
-        expect(assigns(:platform)).to be_persisted
-      end
-
-      it "redirects to the created platform" do
-        post :create, {:platform => valid_attributes}, valid_session
-        expect(response).to redirect_to(Platform.last)
-      end
+    before do
+      allow(User).to receive(:find_by).with(id: user.id) { user }
     end
 
-    describe "with invalid params" do
-      it "assigns a newly created but unsaved platform as @platform" do
-        # Trigger the behavior that occurs when invalid params are submitted
-        allow_any_instance_of(Platform).to receive(:save).and_return(false)
-        post :create, {:platform => { "name" => "invalid value" }}, valid_session
-        expect(assigns(:platform)).to be_a_new(Platform)
-      end
-
-      it "re-renders the 'new' template" do
-        # Trigger the behavior that occurs when invalid params are submitted
-        allow_any_instance_of(Platform).to receive(:save).and_return(false)
-        post :create, {:platform => { "name" => "invalid value" }}, valid_session
-        expect(response).to render_template("new")
-      end
-    end
-  end
-
-  describe "PUT update" do
-    describe "with valid params" do
-      it "updates the requested platform" do
+    describe "GET index" do
+      it "assigns all platforms as @platforms" do
         platform = Platform.create! valid_attributes
-        # Assuming there are no other platforms in the database, this
-        # specifies that the Platform created on the previous line
-        # receives the :update_attributes message with whatever params are
-        # submitted in the request.
-        expect_any_instance_of(Platform).to receive(:update).with({ "name" => "MyString" })
-        put :update, {:id => platform.to_param, :platform => { "name" => "MyString" }}, valid_session
+        get :index, {}, valid_session
+        expect(assigns(:platforms)).to eq([platform])
       end
+    end
 
+    describe "GET show" do
       it "assigns the requested platform as @platform" do
         platform = Platform.create! valid_attributes
-        put :update, {:id => platform.to_param, :platform => valid_attributes}, valid_session
+        get :show, {:id => platform.to_param}, valid_session
         expect(assigns(:platform)).to eq(platform)
-      end
-
-      it "redirects to the platform" do
-        platform = Platform.create! valid_attributes
-        put :update, {:id => platform.to_param, :platform => valid_attributes}, valid_session
-        expect(response).to redirect_to(platform)
       end
     end
 
-    describe "with invalid params" do
-      it "assigns the platform as @platform" do
+    describe "GET new" do
+      it "assigns a new platform as @platform" do
+        get :new, {}, valid_session
+        expect(assigns(:platform)).to be_a_new(Platform)
+      end
+    end
+
+    describe "GET edit" do
+      it "assigns the requested platform as @platform" do
         platform = Platform.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        allow_any_instance_of(Platform).to receive(:save).and_return(false)
-        put :update, {:id => platform.to_param, :platform => { "name" => "invalid value" }}, valid_session
+        get :edit, {:id => platform.to_param}, valid_session
         expect(assigns(:platform)).to eq(platform)
       end
+    end
 
-      it "re-renders the 'edit' template" do
+    describe "POST create" do
+      describe "with valid params" do
+        it "creates a new Platform" do
+          expect {
+            post :create, {:platform => valid_attributes}, valid_session
+          }.to change(Platform, :count).by(1)
+        end
+
+        it "assigns a newly created platform as @platform" do
+          post :create, {:platform => valid_attributes}, valid_session
+          expect(assigns(:platform)).to be_a(Platform)
+          expect(assigns(:platform)).to be_persisted
+        end
+
+        it "redirects to the created platform" do
+          post :create, {:platform => valid_attributes}, valid_session
+          expect(response).to redirect_to(Platform.last)
+        end
+      end
+
+      describe "with invalid params" do
+        it "assigns a newly created but unsaved platform as @platform" do
+          # Trigger the behavior that occurs when invalid params are submitted
+          allow_any_instance_of(Platform).to receive(:save).and_return(false)
+          post :create, {:platform => { "name" => "invalid value" }}, valid_session
+          expect(assigns(:platform)).to be_a_new(Platform)
+        end
+
+        it "re-renders the 'new' template" do
+          # Trigger the behavior that occurs when invalid params are submitted
+          allow_any_instance_of(Platform).to receive(:save).and_return(false)
+          post :create, {:platform => { "name" => "invalid value" }}, valid_session
+          expect(response).to render_template("new")
+        end
+      end
+    end
+
+    describe "PUT update" do
+      describe "with valid params" do
+        it "updates the requested platform" do
+          platform = Platform.create! valid_attributes
+          # Assuming there are no other platforms in the database, this
+          # specifies that the Platform created on the previous line
+          # receives the :update_attributes message with whatever params are
+          # submitted in the request.
+          expect_any_instance_of(Platform).to receive(:update).with({ "name" => "MyString" })
+          put :update, {:id => platform.to_param, :platform => { "name" => "MyString" }}, valid_session
+        end
+
+        it "assigns the requested platform as @platform" do
+          platform = Platform.create! valid_attributes
+          put :update, {:id => platform.to_param, :platform => valid_attributes}, valid_session
+          expect(assigns(:platform)).to eq(platform)
+        end
+
+        it "redirects to the platform" do
+          platform = Platform.create! valid_attributes
+          put :update, {:id => platform.to_param, :platform => valid_attributes}, valid_session
+          expect(response).to redirect_to(platform)
+        end
+      end
+
+      describe "with invalid params" do
+        it "assigns the platform as @platform" do
+          platform = Platform.create! valid_attributes
+          # Trigger the behavior that occurs when invalid params are submitted
+          allow_any_instance_of(Platform).to receive(:save).and_return(false)
+          put :update, {:id => platform.to_param, :platform => { "name" => "invalid value" }}, valid_session
+          expect(assigns(:platform)).to eq(platform)
+        end
+
+        it "re-renders the 'edit' template" do
+          platform = Platform.create! valid_attributes
+          # Trigger the behavior that occurs when invalid params are submitted
+          allow_any_instance_of(Platform).to receive(:save).and_return(false)
+          put :update, {:id => platform.to_param, :platform => { "name" => "invalid value" }}, valid_session
+          expect(response).to render_template("edit")
+        end
+      end
+    end
+
+    describe "DELETE destroy" do
+      it "destroys the requested platform" do
         platform = Platform.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        allow_any_instance_of(Platform).to receive(:save).and_return(false)
-        put :update, {:id => platform.to_param, :platform => { "name" => "invalid value" }}, valid_session
-        expect(response).to render_template("edit")
+        expect {
+          delete :destroy, {:id => platform.to_param}, valid_session
+        }.to change(Platform, :count).by(-1)
+      end
+
+      it "redirects to the platforms list" do
+        platform = Platform.create! valid_attributes
+        delete :destroy, {:id => platform.to_param}, valid_session
+        expect(response).to redirect_to(platforms_url)
       end
     end
   end
 
-  describe "DELETE destroy" do
-    it "destroys the requested platform" do
-      platform = Platform.create! valid_attributes
-      expect {
-        delete :destroy, {:id => platform.to_param}, valid_session
-      }.to change(Platform, :count).by(-1)
+  context "Without authorization" do
+
+    describe "GET index" do
+      it "cannot assign all platforms as @platforms" do
+        platform = Platform.create! valid_attributes
+        get :index, {}, valid_session
+        expect(assigns(:platforms)).to eq(nil)
+      end
     end
 
-    it "redirects to the platforms list" do
-      platform = Platform.create! valid_attributes
-      delete :destroy, {:id => platform.to_param}, valid_session
-      expect(response).to redirect_to(platforms_url)
+    describe "GET show" do
+      it "cannot assign the requested platform as @platform" do
+        platform = Platform.create! valid_attributes
+        get :show, {:id => platform.to_param}, valid_session
+        expect(assigns(:platform)).to eq(nil)
+      end
+    end
+
+    describe "GET new" do
+      it "cannot assign a new platform as @platform" do
+        get :new, {}, valid_session
+        expect(assigns(:platform)).not_to be_a_new(Platform)
+      end
+    end
+
+    describe "GET edit" do
+      it "cannot assign the requested platform as @platform" do
+        platform = Platform.create! valid_attributes
+        get :edit, {:id => platform.to_param}, valid_session
+        expect(assigns(:platform)).to eq(nil)
+      end
+    end
+
+    describe "POST create" do
+      describe "with valid params" do
+        it "cannot create a new Platform" do
+          expect {
+            post :create, {:platform => valid_attributes}, valid_session
+          }.to change(Platform, :count).by(0)
+        end
+
+        it "cannot assign a newly created platform as @platform" do
+          post :create, {:platform => valid_attributes}, valid_session
+          expect(assigns(:platform)).not_to be_a(Platform)
+        end
+
+        it "cannot redirect to the created platform" do
+          post :create, {:platform => valid_attributes}, valid_session
+          expect(response).to redirect_to(login_url)
+        end
+      end
+
+      describe "with invalid params" do
+        it "cannot assign a newly created but unsaved platform as @platform" do
+          # Trigger the behavior that occurs when invalid params are submitted
+          allow_any_instance_of(Platform).to receive(:save).and_return(false)
+          post :create, {:platform => { "name" => "invalid value" }}, valid_session
+          expect(assigns(:platform)).not_to be_a_new(Platform)
+        end
+
+        it "cannot re-render the 'new' template" do
+          # Trigger the behavior that occurs when invalid params are submitted
+          allow_any_instance_of(Platform).to receive(:save).and_return(false)
+          post :create, {:platform => { "name" => "invalid value" }}, valid_session
+          expect(response).to redirect_to(login_url)
+        end
+      end
+    end
+
+    describe "PUT update" do
+      describe "with valid params" do
+        it "cannot update the requested platform" do
+          platform = Platform.create! valid_attributes
+          # Assuming there are no other platforms in the database, this
+          # specifies that the Platform created on the previous line
+          # receives the :update_attributes message with whatever params are
+          # submitted in the request.
+          expect_any_instance_of(Platform).not_to receive(:update).with({ "name" => "MyString" })
+          put :update, {:id => platform.to_param, :platform => { "name" => "MyString" }}, valid_session
+          expect(response).to redirect_to(login_url)
+        end
+
+        it "cannot assign the requested platform as @platform" do
+          platform = Platform.create! valid_attributes
+          put :update, {:id => platform.to_param, :platform => valid_attributes}, valid_session
+          expect(assigns(:platform)).to eq(nil)
+        end
+
+        it "cannot redirect to the platform" do
+          platform = Platform.create! valid_attributes
+          put :update, {:id => platform.to_param, :platform => valid_attributes}, valid_session
+          expect(response).to redirect_to(login_url)
+        end
+      end
+
+      describe "with invalid params" do
+        it "cannot assign the platform as @platform" do
+          platform = Platform.create! valid_attributes
+          # Trigger the behavior that occurs when invalid params are submitted
+          allow_any_instance_of(Platform).to receive(:save).and_return(false)
+          put :update, {:id => platform.to_param, :platform => { "name" => "invalid value" }}, valid_session
+          expect(assigns(:platform)).to eq(nil)
+        end
+
+        it "cannot re-render the 'edit' template" do
+          platform = Platform.create! valid_attributes
+          # Trigger the behavior that occurs when invalid params are submitted
+          allow_any_instance_of(Platform).to receive(:save).and_return(false)
+          put :update, {:id => platform.to_param, :platform => { "name" => "invalid value" }}, valid_session
+          expect(response).to redirect_to(login_url)
+        end
+      end
+    end
+
+    describe "DELETE destroy" do
+      it "cannot destroy the requested platform" do
+        platform = Platform.create! valid_attributes
+        expect {
+          delete :destroy, {:id => platform.to_param}, valid_session
+        }.to change(Platform, :count).by(0)
+      end
+
+      it "cannot redirect to the platforms list" do
+        platform = Platform.create! valid_attributes
+        delete :destroy, {:id => platform.to_param}, valid_session
+          expect(response).to redirect_to(login_url)
+      end
     end
   end
 

@@ -17,7 +17,6 @@
         %th State
         %th Urgency
         %th Email
-        %th Device
         %th
         %th
         %th
@@ -34,9 +33,6 @@
             %td= issue.state
             %td= issue.urgency
             %td= issue.email
-            %td
-              - if issue.device_id
-                = link_to Device.find(issue.device_id).name, Device.find(issue.device_id)
             %td= link_to 'Show', issue
             %td= link_to 'Edit', edit_issue_path(issue)
             %td= link_to 'Destroy', issue, method: :delete, data: { confirm: 'Are you sure?' }

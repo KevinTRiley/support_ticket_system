@@ -5,14 +5,13 @@ class IssuesController < ApplicationController
   # GET /issues
   # GET /issues.json
   def index
-    #@issues = Issue.all
+    @issues = Issue.all.sort { |x, y| y.created_at <=> x.created_at}
     @devices = Device.all
-
-    devicesMostRecentIssues = Array.new
+    #devicesMostRecentIssues = Array.new
     # Sort each device issues by created_at descending and add the first record to the array
-    @devices.each { |device| devicesMostRecentIssues.push(device.issues.find(:first, :order => "created_at desc")) }
+    #@devices.each { |device| devicesMostRecentIssues.push(device.issues.find(:first, :order => "created_at desc")) }
     # Sort each unique issue by created_at descending
-    @issues = devicesMostRecentIssues.sort { |x, y| x.created_at <=> y.created_at}
+    #@issues = devicesMostRecentIssues.sort { |x, y| x.created_at <=> y.created_at}
 
   end
 

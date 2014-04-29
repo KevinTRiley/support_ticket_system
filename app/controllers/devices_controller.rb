@@ -4,13 +4,14 @@ class DevicesController < ApplicationController
   # GET /devices
   # GET /devices.json
   def index
-    @devices = Device.all
+    # Sort the devices by their most recent issues' created_at datetime
+    @devices = Device.all.sort { |x, y| y.issues.find(:first, :order => "created_at desc").created_at <=> x.issues.find(:first, :order => "created_at desc").created_at}
   end
 
   # GET /devices/1
   # GET /devices/1.json
   def show
-    @issues = Issue.all.where(:device_id => @device.id).order("created_at desc")
+    @issues = Issue.all.where(:device_id => @device.id).order("created_at asc")
   end
 
   # GET /devices/new

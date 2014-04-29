@@ -18,10 +18,10 @@ describe "issues/index" do
     ])
   end
 
-  it "renders a list of issues" do
+  it "Without a device accociated with the issue cannot render a list of issues" do
     render
-    assert_select "tr>td", :text => "Description".to_s, :count => 2
-    assert_select "tr>td", :text => "State".to_s, :count => 2
-    assert_select "tr>td", :text => "0".to_s, :count => 2
+    assert_select "tr>td", :text => "Description".to_s, :count => 0
+    assert_select "tr>td", :text => "State".to_s, :count => 0
+    assert_select "tr>td", :text => "0".to_s, :count => 0
   end
 end
