@@ -5,7 +5,7 @@ class IssuesController < ApplicationController
   # GET /issues
   # GET /issues.json
   def index
-    @issues = Issue.all.sort { |x, y| y.created_at <=> x.created_at}
+    @issues = Issue.all.sort { |x, y| x.created_at <=> y.created_at}
     @devices = Device.all
     #devicesMostRecentIssues = Array.new
     # Sort each device issues by created_at descending and add the first record to the array
@@ -36,6 +36,7 @@ class IssuesController < ApplicationController
 
     respond_to do |format|
       if @issue.save
+        IssueNotifier.new_issue(@issue).deliver
         format.html { redirect_to @issue, notice: 'Issue was successfully created.' }
         format.json { render action: 'show', status: :created, location: @issue }
       else
