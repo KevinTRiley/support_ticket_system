@@ -19,7 +19,7 @@ describe "resolutions/index" do
   it "renders a list of resolutions" do
     render
     assert_select "tr>td", :text => 1.to_s, :count => 2
-    assert_select "tr>td", :text => "MyText".to_s, :count => 2
-    assert_select "tr>td", :text => "MyText".to_s, :count => 2
+    assert_select "tr>td", :text => "MyText".to_s, :count => 4
+    assert_select "tr>td", :text => "MyText".to_s, :count => 4
   end
 end

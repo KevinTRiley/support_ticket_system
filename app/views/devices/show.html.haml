@@ -21,10 +21,10 @@
         - @issues.each do |issue|
           %tr
             %td= issue.id
-            %td= link_to Platform.find(issue.platform_id).name, Platform.find(issue.platform_id)
-            %td= link_to Category.find(issue.category_id).name, Platform.find(issue.category_id)
+            %td= issue.platform_link
+            %td= issue.category_link
             %td= issue.description
-            %td= (issue.created_at ? issue.created_at.to_formatted_s(:long_date_short_time):nil)
+            %td= issue.created_at.to_formatted_s(:long_date_short_time)
             %td= issue.state
             %td= issue.urgency
             %td= issue.email

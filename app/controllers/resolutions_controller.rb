@@ -35,6 +35,11 @@ class ResolutionsController < ApplicationController
 
     respond_to do |format|
       if @resolution.save
+        if (@resolution.issue)
+          if (@resolution.issue.email)
+            IssueNotifier.resolved(@resolution.issue).deliver
+          end
+        end
         format.html { redirect_to @resolution, notice: 'Resolution was successfully created.' }
         format.json { render action: 'show', status: :created, location: @resolution }
       else

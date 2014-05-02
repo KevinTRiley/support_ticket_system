@@ -21,14 +21,10 @@
         - @issues.each do |issue|
           %tr
             %td= issue.id
-            %td
-              - if issue.device_id
-                = link_to Device.find(issue.device_id).name, Device.find(issue.device_id)
-            %td
-              - if issue.platform_id
-                = link_to Platform.find(issue.platform_id).name, Platform.find(issue.platform_id)
+            %td= issue.device_link
+            %td= issue.platform_link
             %td= issue.description
-            %td= (issue.created_at ? issue.created_at.to_formatted_s(:long_date_short_time):nil)
+            %td= issue.created_at.to_formatted_s(:long_date_short_time)
             %td= issue.state
             %td= issue.urgency
             %td= issue.email

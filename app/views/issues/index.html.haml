@@ -4,31 +4,31 @@
     - @platforms.each do |platform|
       - if platform.issues.count > 0
         %tr
-          %th{:colspan => 12}= link_to Platform.find(platform.id).name, Platform.find(platform)
+          %th{:colspan => 12}= link_to platform.name, platform
         %tr
           %th ID
           %th Device
           %th Category
-          %th Resolution
           %th Description
           %th Created At
           %th State
           %th Urgency
           %th Email
+          %th Resolved At
           %th{:colspan => 3}
         %tbody
           - @issues.each do |issue|
             - if issue.platform_id == platform.id
               %tr
                 %td= issue.id
-                %td= link_to issue.device.name, issue.device
-                %td= link_to Category.find(issue.category_id).name, Platform.find(issue.category_id)
-                %td= issue.resolution_id
+                %td= issue.device_link
+                %td= issue.category_link
                 %td= issue.description
                 %td= issue.created_at.to_formatted_s(:long_date_short_time)
                 %td= issue.state
                 %td= issue.urgency
                 %td= issue.email
+                %td= issue.resolution_link
                 %td= link_to 'Show', issue
                 %td= link_to 'Edit', edit_issue_path(issue)
                 %td= link_to 'Destroy', issue, method: :delete, data: { confirm: 'Are you sure?' }

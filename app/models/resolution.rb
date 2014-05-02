@@ -12,7 +12,7 @@
 
 class Resolution < ActiveRecord::Base
   belongs_to :issue
-  validates :issue_id, :note, presence: true
+  validates :issue_id, presence: true
   validates :issue_id, uniqueness: true
 
 end

@@ -30,130 +30,141 @@ describe ResolutionsController do
   # ResolutionsController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
-  describe "GET index" do
-    it "assigns all resolutions as @resolutions" do
-      resolution = Resolution.create! valid_attributes
-      get :index, {}, valid_session
-      expect(assigns(:resolutions)).to eq([resolution])
-    end
-  end
 
-  describe "GET show" do
-    it "assigns the requested resolution as @resolution" do
-      resolution = Resolution.create! valid_attributes
-      get :show, {:id => resolution.to_param}, valid_session
-      expect(assigns(:resolution)).to eq(resolution)
-    end
-  end
+  context "With authorization" do
+    let!(:user) { FactoryGirl.build_stubbed(:user) }
 
-  describe "GET new" do
-    it "assigns a new resolution as @resolution" do
-      get :new, {}, valid_session
-      expect(assigns(:resolution)).to be_a_new(Resolution)
-    end
-  end
+    let(:valid_session) { {"user_id" => user.id} }
 
-  describe "GET edit" do
-    it "assigns the requested resolution as @resolution" do
-      resolution = Resolution.create! valid_attributes
-      get :edit, {:id => resolution.to_param}, valid_session
-      expect(assigns(:resolution)).to eq(resolution)
-    end
-  end
-
-  describe "POST create" do
-    describe "with valid params" do
-      it "creates a new Resolution" do
-        expect {
-          post :create, {:resolution => valid_attributes}, valid_session
-        }.to change(Resolution, :count).by(1)
-      end
-
-      it "assigns a newly created resolution as @resolution" do
-        post :create, {:resolution => valid_attributes}, valid_session
-        expect(assigns(:resolution)).to be_a(Resolution)
-        expect(assigns(:resolution)).to be_persisted
-      end
-
-      it "redirects to the created resolution" do
-        post :create, {:resolution => valid_attributes}, valid_session
-        expect(response).to redirect_to(Resolution.last)
-      end
+    before do
+      allow(User).to receive(:find_by).with(id: user.id) { user }
     end
 
-    describe "with invalid params" do
-      it "assigns a newly created but unsaved resolution as @resolution" do
-        # Trigger the behavior that occurs when invalid params are submitted
-        allow_any_instance_of(Resolution).to receive(:save).and_return(false)
-        post :create, {:resolution => { "issue_id" => "invalid value" }}, valid_session
-        expect(assigns(:resolution)).to be_a_new(Resolution)
-      end
-
-      it "re-renders the 'new' template" do
-        # Trigger the behavior that occurs when invalid params are submitted
-        allow_any_instance_of(Resolution).to receive(:save).and_return(false)
-        post :create, {:resolution => { "issue_id" => "invalid value" }}, valid_session
-        expect(response).to render_template("new")
-      end
-    end
-  end
-
-  describe "PUT update" do
-    describe "with valid params" do
-      it "updates the requested resolution" do
+    describe "GET index" do
+      it "assigns all resolutions as @resolutions" do
         resolution = Resolution.create! valid_attributes
-        # Assuming there are no other resolutions in the database, this
-        # specifies that the Resolution created on the previous line
-        # receives the :update_attributes message with whatever params are
-        # submitted in the request.
-        expect_any_instance_of(Resolution).to receive(:update).with({ "issue_id" => "1" })
-        put :update, {:id => resolution.to_param, :resolution => { "issue_id" => "1" }}, valid_session
+        get :index, {}, valid_session
+        expect(assigns(:resolutions)).to eq([resolution])
       end
+    end
 
+    describe "GET show" do
       it "assigns the requested resolution as @resolution" do
         resolution = Resolution.create! valid_attributes
-        put :update, {:id => resolution.to_param, :resolution => valid_attributes}, valid_session
+        get :show, {:id => resolution.to_param}, valid_session
         expect(assigns(:resolution)).to eq(resolution)
-      end
-
-      it "redirects to the resolution" do
-        resolution = Resolution.create! valid_attributes
-        put :update, {:id => resolution.to_param, :resolution => valid_attributes}, valid_session
-        expect(response).to redirect_to(resolution)
       end
     end
 
-    describe "with invalid params" do
-      it "assigns the resolution as @resolution" do
-        resolution = Resolution.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        allow_any_instance_of(Resolution).to receive(:save).and_return(false)
-        put :update, {:id => resolution.to_param, :resolution => { "issue_id" => "invalid value" }}, valid_session
-        expect(assigns(:resolution)).to eq(resolution)
-      end
-
-      it "re-renders the 'edit' template" do
-        resolution = Resolution.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        allow_any_instance_of(Resolution).to receive(:save).and_return(false)
-        put :update, {:id => resolution.to_param, :resolution => { "issue_id" => "invalid value" }}, valid_session
-        expect(response).to render_template("edit")
+    describe "GET new" do
+      it "assigns a new resolution as @resolution" do
+        get :new, {}, valid_session
+        expect(assigns(:resolution)).to be_a_new(Resolution)
       end
     end
-  end
 
-  describe "DELETE destroy" do
-    it "destroys the requested resolution" do
-      resolution = Resolution.create! valid_attributes
-      expect {
+    describe "GET edit" do
+      it "assigns the requested resolution as @resolution" do
+        resolution = Resolution.create! valid_attributes
+        get :edit, {:id => resolution.to_param}, valid_session
+        expect(assigns(:resolution)).to eq(resolution)
+      end
+    end
+
+    describe "POST create" do
+      describe "with valid params" do
+        it "creates a new Resolution" do
+          expect {
+            post :create, {:resolution => valid_attributes}, valid_session
+          }.to change(Resolution, :count).by(1)
+        end
+
+        it "assigns a newly created resolution as @resolution" do
+          post :create, {:resolution => valid_attributes}, valid_session
+          expect(assigns(:resolution)).to be_a(Resolution)
+          expect(assigns(:resolution)).to be_persisted
+        end
+
+        it "redirects to the created resolution" do
+          post :create, {:resolution => valid_attributes}, valid_session
+          expect(response).to redirect_to(Resolution.last)
+        end
+      end
+
+      describe "with invalid params" do
+        it "assigns a newly created but unsaved resolution as @resolution" do
+          # Trigger the behavior that occurs when invalid params are submitted
+          allow_any_instance_of(Resolution).to receive(:save).and_return(false)
+          post :create, {:resolution => { "issue_id" => "invalid value" }}, valid_session
+          expect(assigns(:resolution)).to be_a_new(Resolution)
+        end
+
+        it "re-renders the 'new' template" do
+          # Trigger the behavior that occurs when invalid params are submitted
+          allow_any_instance_of(Resolution).to receive(:save).and_return(false)
+          post :create, {:resolution => { "issue_id" => "invalid value" }}, valid_session
+          expect(response).to render_template("new")
+        end
+      end
+    end
+
+    describe "PUT update" do
+      describe "with valid params" do
+        it "updates the requested resolution" do
+          resolution = Resolution.create! valid_attributes
+          # Assuming there are no other resolutions in the database, this
+          # specifies that the Resolution created on the previous line
+          # receives the :update_attributes message with whatever params are
+          # submitted in the request.
+          expect_any_instance_of(Resolution).to receive(:update).with({ "issue_id" => "1" })
+          put :update, {:id => resolution.to_param, :resolution => { "issue_id" => "1" }}, valid_session
+        end
+
+        it "assigns the requested resolution as @resolution" do
+          resolution = Resolution.create! valid_attributes
+          put :update, {:id => resolution.to_param, :resolution => valid_attributes}, valid_session
+          expect(assigns(:resolution)).to eq(resolution)
+        end
+
+        it "redirects to the resolution" do
+          resolution = Resolution.create! valid_attributes
+          put :update, {:id => resolution.to_param, :resolution => valid_attributes}, valid_session
+          expect(response).to redirect_to(resolution)
+        end
+      end
+
+      describe "with invalid params" do
+        it "assigns the resolution as @resolution" do
+          resolution = Resolution.create! valid_attributes
+          # Trigger the behavior that occurs when invalid params are submitted
+          allow_any_instance_of(Resolution).to receive(:save).and_return(false)
+          put :update, {:id => resolution.to_param, :resolution => { "issue_id" => "invalid value" }}, valid_session
+          expect(assigns(:resolution)).to eq(resolution)
+        end
+
+        it "re-renders the 'edit' template" do
+          resolution = Resolution.create! valid_attributes
+          # Trigger the behavior that occurs when invalid params are submitted
+          allow_any_instance_of(Resolution).to receive(:save).and_return(false)
+          put :update, {:id => resolution.to_param, :resolution => { "issue_id" => "invalid value" }}, valid_session
+          expect(response).to render_template("edit")
+        end
+      end
+    end
+
+    describe "DELETE destroy" do
+      it "destroys the requested resolution" do
+        resolution = Resolution.create! valid_attributes
+        expect {
+          delete :destroy, {:id => resolution.to_param}, valid_session
+        }.to change(Resolution, :count).by(-1)
+      end
+
+      it "redirects to the resolutions list" do
+        resolution = Resolution.create! valid_attributes
         delete :destroy, {:id => resolution.to_param}, valid_session
-      }.to change(Resolution, :count).by(-1)
-    end
-
-    it "redirects to the resolutions list" do
-      resolution = Resolution.create! valid_attributes
-      delete :destroy, {:id => resolution.to_param}, valid_session
-      expect(response).to redirect_to(resolutions_url)
+        expect(response).to redirect_to(resolutions_url)
+      end
     end
   end
 

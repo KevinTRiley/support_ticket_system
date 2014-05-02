@@ -7,13 +7,30 @@ describe "issues/index" do
         :description => "Description",
         :state => "State",
         :urgency => 0,
-        :email => "test@email.com"
+        :email => "test@email.com",
+        :device_id => 1,
+        :platform_id => 1,
+        :category_id => 1
       ),
       stub_model(Issue,
         :description => "Description",
         :state => "State",
         :urgency => 0,
-        :email => "test@email.com"
+        :email => "test@email.com",
+        :device_id => 1,
+        :platform_id => 1,
+        :category_id => 1
+      )
+    ])
+  end
+
+  before(:each) do
+    assign(:platforms, [
+      stub_model(Platform,
+        :name => "PlatName"
+      ),
+      stub_model(Platform,
+        :name => "PlatName2"
       )
     ])
   end

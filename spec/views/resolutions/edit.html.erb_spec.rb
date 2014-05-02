@@ -13,7 +13,6 @@ describe "resolutions/edit" do
     render
 
     assert_select "form[action=?][method=?]", resolution_path(@resolution), "post" do
-      assert_select "input#resolution_issue_id[name=?]", "resolution[issue_id]"
       assert_select "textarea#resolution_note[name=?]", "resolution[note]"
       assert_select "textarea#resolution_email_message[name=?]", "resolution[email_message]"
     end

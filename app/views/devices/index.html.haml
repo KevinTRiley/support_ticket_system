@@ -16,7 +16,7 @@
         %th Created At
         %th State
         %th Urgency
-        %th Resolved At (updated_at)
+        %th Resolved At
         %th{:colspan => 3}
     %tbody
       - @devices.each do |device|
@@ -29,8 +29,8 @@
             %td= link_to 'Edit', edit_device_path(device)
             %td= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' }
             %td= issue.id
-            %td= link_to Platform.find(issue.platform_id).name, Platform.find(issue.platform_id)
-            %td= link_to Category.find(issue.category_id).name, Platform.find(issue.category_id)
+            %td= issue.platform_link
+            %td= issue.category_link
             %td= issue.description
             %td= issue.created_at.to_formatted_s(:long_date_short_time)
             %td= issue.state
@@ -49,13 +49,13 @@
             %td= link_to 'Edit', edit_device_path(device)
             %td= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' }
             %td= issue.id
-            %td= link_to Platform.find(issue.platform_id).name, Platform.find(issue.platform_id)
-            %td= link_to Category.find(issue.category_id).name, Platform.find(issue.category_id)
+            %td= issue.platform_link
+            %td= issue.category_link
             %td= issue.description
             %td= issue.created_at.to_formatted_s(:long_date_short_time)
             %td= issue.state
             %td= issue.urgency
-            %td= issue.updated_at.to_formatted_s(:long_date_short_time)
+            %td= issue.resolution_link
             %td= link_to 'Show', issue
             %td= link_to 'Edit', edit_issue_path(issue)
             %td= link_to 'Destroy', issue, method: :delete, data: { confirm: 'Are you sure?' }

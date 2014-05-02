@@ -59,7 +59,6 @@ class IssuesController < ApplicationController
         if @issue.state.to_s == "Resolved"
           session[:resolved_issue_id] = @issue.id
           format.html { redirect_to new_resolution_path, action: "new" }
-          #IssueNotifier.resolved(@issue).deliver
         else
           format.html { redirect_to @issue, notice: 'Issue was successfully updated.' }
         end

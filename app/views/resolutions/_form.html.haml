@@ -12,9 +12,9 @@
     = f.number_field :issue_id, :class => "form-control", readonly: true
   .field{:class => "form-group"}
     = f.label :note
-    = f.text_field :note, :class => "form-control"
+    = f.text_area :note, :class => "form-control"
   .field{:class => "form-group"}
     = f.label :email_message
-    = f.text_field :email_message, :class => "form-control"
+    = f.text_area :email_message, :class => "form-control"
   .actions
     = f.button :submit, :class => "btn btn-primary"
