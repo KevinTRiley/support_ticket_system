@@ -31,6 +31,8 @@ gem 'haml'
 
 gem 'carrierwave'
 
+gem 'acts-as-taggable-on'
+
 group :test do
   gem 'factory_girl_rails'
 end

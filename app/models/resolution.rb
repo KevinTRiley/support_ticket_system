@@ -15,4 +15,7 @@ class Resolution < ActiveRecord::Base
   validates :issue_id, presence: true
   validates :issue_id, uniqueness: true
 
+  acts_as_taggable
+  acts_as_taggable_on :resolution_tags
+
 end
