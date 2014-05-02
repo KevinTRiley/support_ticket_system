@@ -12,8 +12,9 @@ class IssueNotifier < ActionMailer::Base
 
     mail subject: "New Issue Ticket"
   end
-  def resolved(issue)
+  def resolved(issue, message)
     @issue = issue
+    @message = (message.length > 0 ? message : "Your ticket as been resolved.")
 
     mail to: issue.email, subject: "Issue Ticket Resolved"
   end

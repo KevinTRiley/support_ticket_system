@@ -37,7 +37,7 @@ class ResolutionsController < ApplicationController
       if @resolution.save
         if (@resolution.issue)
           if (@resolution.issue.email)
-            IssueNotifier.resolved(@resolution.issue).deliver
+            IssueNotifier.resolved(@resolution.issue, @resolution.email_message).deliver
           end
         end
         format.html { redirect_to @resolution, notice: 'Resolution was successfully created.' }
