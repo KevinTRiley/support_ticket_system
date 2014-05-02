@@ -1,0 +1,20 @@
+%h1 Listing resolutions
+.table-responsive
+  %table{:class => "table table-striped table-bordered table-condensed table-hover"}
+    %thead
+      %tr
+        %th Issue
+        %th Note
+        %th Email message
+        %th{:colspan => 3}
+    %tbody
+      - @resolutions.each do |resolution|
+        %tr
+          %td= resolution.issue_id
+          %td= resolution.note
+          %td= resolution.email_message
+          %td= link_to 'Show', resolution
+          %td= link_to 'Edit', edit_resolution_path(resolution)
+          %td= link_to 'Destroy', resolution, method: :delete, data: { confirm: 'Are you sure?' }
+%br
+= link_to 'New Resolution', new_resolution_path, :class => "btn btn-primary"

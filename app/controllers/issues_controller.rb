@@ -57,9 +57,12 @@ class IssuesController < ApplicationController
     respond_to do |format|
       if @issue.update(issue_params)
         if @issue.state.to_s == "Resolved"
-          IssueNotifier.resolved(@issue).deliver
+          session[:resolved_issue_id] = @issue.id
+          format.html { redirect_to new_resolution_path, action: "new" }
+          #IssueNotifier.resolved(@issue).deliver
+        else
+          format.html { redirect_to @issue, notice: 'Issue was successfully updated.' }
         end
-        format.html { redirect_to @issue, notice: 'Issue was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -84,13 +87,13 @@ class IssuesController < ApplicationController
       @issue = Issue.find(params[:id])
     end
     def set_devices
-      @devices = Device.all.map { |device| [device.name, device.id] }
+      @devices = Device.order(:name => :asc).all
     end
     def set_platforms
-      @platforms = Platform.all.map { |platform| [platform.name, platform.id] }
+      @platforms = Platform.order(:name => :asc).all
     end
     def set_categories
-      @categories = Category.all.map { |category| [category.name, category.id] }
+      @categories = Category.order(:name => :asc).all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

@@ -37,6 +37,7 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'annotate'
 end
 
 group :doc do

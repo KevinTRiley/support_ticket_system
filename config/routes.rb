@@ -1,19 +1,14 @@
 SupportTicketSystem::Application.routes.draw do
 
+  resources :resolutions
+
   namespace :api, defaults: {format: 'json'} do
     namespace :v1 do
-      resources :recipients
-      resources :recipient_lists
-      resources :categories
-      resources :platforms
-      resources :devices
-      resources :users
       resources :issues
     end
   end
 
   resources :recipients
-  resources :recipient_lists
   resources :categories
   resources :platforms
   resources :devices

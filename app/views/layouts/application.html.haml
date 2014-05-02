@@ -14,4 +14,7 @@
       %li{:class => "#{params[:controller] == 'platforms' ? 'active' : ''}"}= link_to 'Platforms', platforms_path
       %li{:class => "#{params[:controller] == 'categories' ? 'active' : ''}"}= link_to 'Categories', categories_path
       %li{:class => "#{params[:controller] == 'recipients' ? 'active' : ''}"}= link_to 'Recipient List', recipients_path
+      %li{:class => "#{params[:controller] == 'resolutions' ? 'active' : ''}"}= link_to 'Resolutions List', resolutions_path
+      - if session[:user_id]
+        %li{:style => "float: right"}= link_to 'Logout', logout_path, method: :delete
     = yield

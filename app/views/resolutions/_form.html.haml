@@ -1,0 +1,20 @@
+= form_for @resolution, :html => { :multipart => true } do |f|
+  - if @resolution.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@resolution.errors.count, "error")
+        prohibited this resolution from being saved:
+      %ul
+        - @resolution.errors.full_messages.each do |msg|
+          %li= msg
+  .field{:class => "form-group hidden"}
+    = f.label :issue_id
+    = f.number_field :issue_id, :class => "form-control", readonly: true
+  .field{:class => "form-group"}
+    = f.label :note
+    = f.text_field :note, :class => "form-control"
+  .field{:class => "form-group"}
+    = f.label :email_message
+    = f.text_field :email_message, :class => "form-control"
+  .actions
+    = f.button :submit, :class => "btn btn-primary"

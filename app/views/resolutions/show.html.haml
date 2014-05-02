@@ -1,0 +1,10 @@
+#notice
+  %p= notice
+%p
+  %strong.code#message Issue:
+  = @resolution.issue_id
+%p
+  %strong.code#message Email message:
+  = @resolution.email_message
+= link_to 'Edit Recipient', edit_resolution_path(@resolution), :class => "btn btn-primary"
+= link_to 'Back', resolutions_path, :class => "btn btn-default"
